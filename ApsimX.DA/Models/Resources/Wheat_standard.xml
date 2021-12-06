@@ -1,0 +1,2637 @@
+<Plant15>
+  <Name>Wheat</Name>
+  <AutoHarvest>false</AutoHarvest>
+  <CropType>Wheat</CropType>
+  <EOCropFactor>1.5</EOCropFactor>
+  <NSupplyPreference>active</NSupplyPreference>
+  <DoRetranslocationBeforeNDemand>false</DoRetranslocationBeforeNDemand>
+  <RemovedByAnimal />
+  <Population1>
+    <Name>Population</Name>
+    <PhaseBasedSwitch>
+      <Name>CropFailureStressPeriod</Name>
+      <Start>Emergence</Start>
+      <End>Flowering</End>
+    </PhaseBasedSwitch>
+    <SoilTemperatureWeightedFunction>
+      <Name>DeathHighTemperatureDuringEmergence</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>55</double>
+          <double>60</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+    </SoilTemperatureWeightedFunction>
+    <Density>120</Density>
+    <LeafNumberCritical>10</LeafNumberCritical>
+    <TTEmergenceLimit>300</TTEmergenceLimit>
+    <DaysToGerminationLimit>40</DaysToGerminationLimit>
+    <SWStressPhenoLimit>25</SWStressPhenoLimit>
+    <SWStressPhotoLimit>99</SWStressPhotoLimit>
+    <SWStressPhotoRate>0</SWStressPhotoRate>
+  </Population1>
+  <Phenology>
+    <Name>Phenology</Name>
+    <LinearInterpolationFunction>
+      <Name>ThermalTime</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>26</double>
+          <double>34</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>26</double>
+          <double>0</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Vernalisation].CrownTemperature</XProperty>
+    </LinearInterpolationFunction>
+    <GerminatingPhase>
+      <Name>SowingToGermination</Name>
+      <Start>Sowing</Start>
+      <End>Germination</End>
+    </GerminatingPhase>
+    <EmergingPhase15>
+      <Name>GerminationToEmergence</Name>
+      <LinearInterpolationFunction>
+        <Name>ThermalTime</Name>
+        <XYPairs>
+          <Name>XYPairs</Name>
+          <X>
+            <double>0</double>
+            <double>26</double>
+            <double>34</double>
+          </X>
+          <Y>
+            <double>0</double>
+            <double>26</double>
+            <double>0</double>
+          </Y>
+        </XYPairs>
+        <XProperty>[Vernalisation].CrownTemperature</XProperty>
+      </LinearInterpolationFunction>
+      <Start>Germination</Start>
+      <End>Emergence</End>
+      <ShootLag>40</ShootLag>
+      <ShootRate>1.5</ShootRate>
+    </EmergingPhase15>
+    <GenericPhase>
+      <Name>EmergenceToEndOfJuvenile</Name>
+      <Constant>
+        <Name>Target</Name>
+        <FixedValue>1</FixedValue>
+      </Constant>
+      <Constant>
+        <Name>ThermalTime</Name>
+        <FixedValue>1.1</FixedValue>
+      </Constant>
+      <Memo>
+        <Name>Cludge Alert</Name>
+        <MemoText><![CDATA[
+<html><body>
+This phase has a target of 1 and a Tt of 1 so it always lasts for a day.  Phase should be removed but leaving there for the time being<br/>
+
+</body></html>]]></MemoText>
+      </Memo>
+      <Start>Emergence</Start>
+      <End>EndOfJuvenile</End>
+    </GenericPhase>
+    <GenericPhase>
+      <Name>EndOfJuvenileToFloralInitiation</Name>
+      <Constant>
+        <Name>Target</Name>
+        <FixedValue>400</FixedValue>
+      </Constant>
+      <LinearInterpolationFunction>
+        <Name>ThermalTime</Name>
+        <XYPairs>
+          <Name>XYPairs</Name>
+          <X>
+            <double>0</double>
+            <double>26</double>
+            <double>34</double>
+          </X>
+          <Y>
+            <double>0</double>
+            <double>26</double>
+            <double>0</double>
+          </Y>
+        </XYPairs>
+        <XProperty>[Vernalisation].CrownTemperature</XProperty>
+      </LinearInterpolationFunction>
+      <MultiplyFunction>
+        <Name>Stress</Name>
+        <MinimumFunction>
+          <Name>MinimumFunction</Name>
+          <VariableReference>
+            <Name>VariableReference</Name>
+            <VariableName>[Vernalisation].VernEff</VariableName>
+          </VariableReference>
+          <VariableReference>
+            <Name>Variable1</Name>
+            <VariableName>[Vernalisation].PhotopEff</VariableName>
+          </VariableReference>
+        </MinimumFunction>
+        <MinimumFunction>
+          <Name>Stresses</Name>
+          <VariableReference>
+            <Name>Variable2</Name>
+            <VariableName>[SWStress].Pheno</VariableName>
+          </VariableReference>
+          <VariableReference>
+            <Name>Variable3</Name>
+            <VariableName>[NStress].Pheno</VariableName>
+          </VariableReference>
+          <VariableReference>
+            <Name>Variable4</Name>
+            <VariableName>[PStress].Pheno</VariableName>
+          </VariableReference>
+        </MinimumFunction>
+      </MultiplyFunction>
+      <Start>EndOfJuvenile</Start>
+      <End>FloralInitiation</End>
+    </GenericPhase>
+    <GenericPhase>
+      <Name>FloralInitiationToFlowering</Name>
+      <Constant>
+        <Name>Target</Name>
+        <FixedValue>555</FixedValue>
+      </Constant>
+      <LinearInterpolationFunction>
+        <Name>ThermalTime</Name>
+        <XYPairs>
+          <Name>XYPairs</Name>
+          <X>
+            <double>0</double>
+            <double>26</double>
+            <double>34</double>
+          </X>
+          <Y>
+            <double>0</double>
+            <double>26</double>
+            <double>0</double>
+          </Y>
+        </XYPairs>
+        <XProperty>[Vernalisation].CrownTemperature</XProperty>
+      </LinearInterpolationFunction>
+      <MultiplyFunction>
+        <Name>Stress</Name>
+        <MinimumFunction>
+          <Name>MinimumFunction</Name>
+          <VariableReference>
+            <Name>VariableReference</Name>
+            <VariableName>[Vernalisation].VernEff</VariableName>
+          </VariableReference>
+          <VariableReference>
+            <Name>Variable1</Name>
+            <VariableName>[Vernalisation].PhotopEff</VariableName>
+          </VariableReference>
+        </MinimumFunction>
+        <MinimumFunction>
+          <Name>Stresses</Name>
+          <VariableReference>
+            <Name>Variable2</Name>
+            <VariableName>[SWStress].Pheno</VariableName>
+          </VariableReference>
+          <VariableReference>
+            <Name>Variable3</Name>
+            <VariableName>[NStress].Pheno</VariableName>
+          </VariableReference>
+          <VariableReference>
+            <Name>Variable4</Name>
+            <VariableName>[PStress].Pheno</VariableName>
+          </VariableReference>
+        </MinimumFunction>
+      </MultiplyFunction>
+      <Start>FloralInitiation</Start>
+      <End>Flowering</End>
+    </GenericPhase>
+    <GenericPhase>
+      <Name>FloweringToStartGrainFill</Name>
+      <Constant>
+        <Name>Target</Name>
+        <FixedValue>120</FixedValue>
+      </Constant>
+      <LinearInterpolationFunction>
+        <Name>ThermalTime</Name>
+        <XYPairs>
+          <Name>XYPairs</Name>
+          <X>
+            <double>0</double>
+            <double>26</double>
+            <double>34</double>
+          </X>
+          <Y>
+            <double>0</double>
+            <double>26</double>
+            <double>0</double>
+          </Y>
+        </XYPairs>
+        <XProperty>[Vernalisation].CrownTemperature</XProperty>
+      </LinearInterpolationFunction>
+      <Start>Flowering</Start>
+      <End>StartGrainFill</End>
+    </GenericPhase>
+    <GenericPhase>
+      <Name>StartGrainFillToEndGrainFill</Name>
+      <Constant>
+        <Name>Target</Name>
+        <FixedValue>545</FixedValue>
+      </Constant>
+      <LinearInterpolationFunction>
+        <Name>ThermalTime</Name>
+        <XYPairs>
+          <Name>XYPairs</Name>
+          <X>
+            <double>0</double>
+            <double>26</double>
+            <double>34</double>
+          </X>
+          <Y>
+            <double>0</double>
+            <double>26</double>
+            <double>0</double>
+          </Y>
+        </XYPairs>
+        <XProperty>[Vernalisation].CrownTemperature</XProperty>
+      </LinearInterpolationFunction>
+      <Start>StartGrainFill</Start>
+      <End>EndGrainFill</End>
+    </GenericPhase>
+    <GenericPhase>
+      <Name>EndGrainFillToMaturity</Name>
+      <Constant>
+        <Name>Target</Name>
+        <FixedValue>35</FixedValue>
+      </Constant>
+      <LinearInterpolationFunction>
+        <Name>ThermalTime</Name>
+        <XYPairs>
+          <Name>XYPairs</Name>
+          <X>
+            <double>0</double>
+            <double>26</double>
+            <double>34</double>
+          </X>
+          <Y>
+            <double>0</double>
+            <double>26</double>
+            <double>0</double>
+          </Y>
+        </XYPairs>
+        <XProperty>[Vernalisation].CrownTemperature</XProperty>
+      </LinearInterpolationFunction>
+      <Start>EndGrainFill</Start>
+      <End>Maturity</End>
+    </GenericPhase>
+    <GenericPhase>
+      <Name>MaturityToHarvestRipe</Name>
+      <Constant>
+        <Name>Target</Name>
+        <FixedValue>1</FixedValue>
+      </Constant>
+      <Constant>
+        <Name>ThermalTime</Name>
+        <FixedValue>1.1</FixedValue>
+      </Constant>
+      <Memo>
+        <Name>Cludge Alert</Name>
+        <MemoText><![CDATA[
+<html><body>
+This phase has a target of 1 and a Tt of 1 so it always lasts for a day.  Phase should be replaced with a ripening model when one is built<br/>
+
+</body></html>]]></MemoText>
+      </Memo>
+      <Start>Maturity</Start>
+      <End>HarvestRipe</End>
+    </GenericPhase>
+    <GenericPhase>
+      <Name>ReadyForHarvesting</Name>
+      <Constant>
+        <Name>Target</Name>
+        <FixedValue>1000</FixedValue>
+      </Constant>
+      <LinearInterpolationFunction>
+        <Name>ThermalTime</Name>
+        <XYPairs>
+          <Name>XYPairs</Name>
+          <X>
+            <double>0</double>
+            <double>26</double>
+            <double>34</double>
+          </X>
+          <Y>
+            <double>0</double>
+            <double>26</double>
+            <double>0</double>
+          </Y>
+        </XYPairs>
+        <XProperty>[Vernalisation].CrownTemperature</XProperty>
+      </LinearInterpolationFunction>
+      <Start>HarvestRipe</Start>
+      <End>EndCrop</End>
+    </GenericPhase>
+    <GenericPhase>
+      <Name>EndCrop</Name>
+      <Constant>
+        <Name>Target</Name>
+        <FixedValue>1000</FixedValue>
+      </Constant>
+      <LinearInterpolationFunction>
+        <Name>ThermalTime</Name>
+        <XYPairs>
+          <Name>XYPairs</Name>
+          <X>
+            <double>0</double>
+            <double>26</double>
+            <double>34</double>
+          </X>
+          <Y>
+            <double>0</double>
+            <double>26</double>
+            <double>0</double>
+          </Y>
+        </XYPairs>
+        <XProperty>[Vernalisation].CrownTemperature</XProperty>
+      </LinearInterpolationFunction>
+      <Start>EndCrop</Start>
+      <End>Unused</End>
+    </GenericPhase>
+    <VernalisationCW>
+      <Name>Vernalisation</Name>
+      <AirTemperatureFunction>
+        <Name>VDModel</Name>
+        <XYPairs>
+          <Name>XYPairs</Name>
+          <X>
+            <double>0</double>
+            <double>2</double>
+            <double>8</double>
+            <double>15</double>
+          </X>
+          <Y>
+            <double>0</double>
+            <double>1</double>
+            <double>0.5</double>
+            <double>0</double>
+          </Y>
+        </XYPairs>
+      </AirTemperatureFunction>
+      <PhotoperiodFunction>
+        <Name>Photoperiod</Name>
+        <Twilight>-6</Twilight>
+      </PhotoperiodFunction>
+      <VernSens>2.5</VernSens>
+      <PhotopSens>3.5</PhotopSens>
+      <StartStageForEffects>Germination</StartStageForEffects>
+      <EndStageForEffects>FloralInitiation</EndStageForEffects>
+      <StartStageForCumulativeVD>Germination</StartStageForCumulativeVD>
+      <EndStageForCumulativeVD>FloralInitiation</EndStageForCumulativeVD>
+    </VernalisationCW>
+    <LinearInterpolationFunction>
+      <Name>RewindDueToBiomassRemoved</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>0.1</double>
+          <double>0.4</double>
+          <double>0.5</double>
+          <double>1</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>0.08</double>
+          <double>0.4</double>
+          <double>0.5</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Phenology].FractionBiomassRemoved</XProperty>
+    </LinearInterpolationFunction>
+    <PhaseBasedSwitch>
+      <Name>AboveGroundPeriod</Name>
+      <Start>Emergence</Start>
+      <End>EndCrop</End>
+    </PhaseBasedSwitch>
+    <Emerged>false</Emerged>
+  </Phenology>
+  <Root1>
+    <Name>Root</Name>
+    <Biomass>
+      <Name>Live</Name>
+    </Biomass>
+    <Biomass>
+      <Name>Dead</Name>
+    </Biomass>
+    <LinearInterpolationFunction>
+      <Name>RootAdvanceFactorTemp</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>25</double>
+          <double>35</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>1</double>
+          <double>0</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Environment].MeanT</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>RootAdvanceFactorWaterStress</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>1</double>
+        </X>
+        <Y>
+          <double>1</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[SWStress].Photo</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>SWFactorRootDepth</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>0.25</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Root].FASW</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>SWFactorRootLength</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>0.25</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Root].FASWLayered</XProperty>
+    </LinearInterpolationFunction>
+    <StageBasedInterpolation>
+      <Name>RootDepthRate</Name>
+      <Stages>
+        <string>Sowing</string>
+        <string>Germination</string>
+        <string>Emergence</string>
+        <string>EndOfJuvenile</string>
+        <string>FloralInitiation</string>
+        <string>Flowering</string>
+        <string>StartGrainFill</string>
+        <string>EndGrainFill</string>
+        <string>Maturity</string>
+        <string>HarvestRipe</string>
+        <string>EndCrop</string>
+      </Stages>
+      <Codes>
+        <double>0</double>
+        <double>5</double>
+        <double>30</double>
+        <double>30</double>
+        <double>30</double>
+        <double>30</double>
+        <double>0</double>
+        <double>0</double>
+        <double>0</double>
+        <double>0</double>
+        <double>0</double>
+      </Codes>
+      <Proportional>false</Proportional>
+    </StageBasedInterpolation>
+    <LinearInterpolationFunction>
+      <Name>RelativeRootRate</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>0.0001</double>
+          <double>0.0003</double>
+        </X>
+        <Y>
+          <double>0.02</double>
+          <double>0.1</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Root].RootLengthDensity</XProperty>
+    </LinearInterpolationFunction>
+    <NUptake3>
+      <Name>NUptakeFunction</Name>
+      <PhaseBasedSwitch>
+        <Name>NStressPeriod</Name>
+        <Start>EndOfJuvenile(0.3)</Start>
+        <End>EndCrop</End>
+      </PhaseBasedSwitch>
+      <kno3>0.02</kno3>
+      <knh4>0</knh4>
+      <no3ppm_min>0</no3ppm_min>
+      <nh4ppm_min>0</nh4ppm_min>
+      <total_n_uptake_max>0.6</total_n_uptake_max>
+    </NUptake3>
+    <Constant>
+      <Name>GrowthStructuralFractionStage</Name>
+      <FixedValue>1</FixedValue>
+    </Constant>
+    <LinearInterpolationFunction>
+      <Name>DMSenescenceFraction</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>1</double>
+        </X>
+        <Y>
+          <double>0.005</double>
+          <double>0.005</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Leaf].FractionCanopySenescing</XProperty>
+    </LinearInterpolationFunction>
+    <Live>
+      <Name>Live</Name>
+    </Live>
+    <Dead>
+      <Name>Dead</Name>
+    </Dead>
+    <NConcentrationCritical>0.02</NConcentrationCritical>
+    <NConcentrationMinimum>0.01</NConcentrationMinimum>
+    <NConcentrationMaximum>0.02</NConcentrationMaximum>
+    <InitialRootDepth>100</InitialRootDepth>
+    <DieBackFraction>0</DieBackFraction>
+    <cl />
+    <ll>
+      <double>0.2</double>
+      <double>0.2</double>
+      <double>0.2</double>
+      <double>0.2</double>
+      <double>0.21</double>
+      <double>0.19</double>
+      <double>0.14</double>
+      <double>0.14</double>
+    </ll>
+    <kl>
+      <double>0.06</double>
+      <double>0.06</double>
+      <double>0.06</double>
+      <double>0.06</double>
+      <double>0.06</double>
+      <double>0.06</double>
+      <double>0.06</double>
+      <double>0.06</double>
+    </kl>
+    <xf>
+      <double>1</double>
+      <double>1</double>
+      <double>1</double>
+      <double>1</double>
+      <double>1</double>
+      <double>1</double>
+      <double>1</double>
+      <double>1</double>
+    </xf>
+    <ModifyKL>false</ModifyKL>
+    <ClA>4</ClA>
+    <ClB>-0.005</ClB>
+    <ESPA>10</ESPA>
+    <ESPB>-0.15</ESPB>
+    <ECA>3</ECA>
+    <ECB>-1.3</ECB>
+    <NDeficitUptakeFraction>0.0001</NDeficitUptakeFraction>
+    <NSenescenceConcentration>0.005</NSenescenceConcentration>
+    <NSupplyPreference>active</NSupplyPreference>
+    <SenescenceDetachmentFraction>1</SenescenceDetachmentFraction>
+    <InitialWt>0.01</InitialWt>
+    <InitialNConcentration>0.02</InitialNConcentration>
+    <SpecificRootLength>105000</SpecificRootLength>
+  </Root1>
+  <GenericArbitratorXY>
+    <Name>Arbitrator1</Name>
+    <LinearInterpolationFunction>
+      <Name>FracDMRemainingInLeaf</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>1</double>
+          <double>2</double>
+          <double>3</double>
+          <double>4</double>
+          <double>4.9</double>
+          <double>5</double>
+          <double>5.4</double>
+          <double>6</double>
+          <double>6.9</double>
+          <double>7</double>
+          <double>8</double>
+          <double>9</double>
+          <double>10</double>
+          <double>11</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>0</double>
+          <double>0.6</double>
+          <double>0.6</double>
+          <double>0.6</double>
+          <double>0.42</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Phenology].Stage</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>RatioRootShoot</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>1</double>
+          <double>2</double>
+          <double>3</double>
+          <double>4</double>
+          <double>4.9</double>
+          <double>5</double>
+          <double>5.4</double>
+          <double>6</double>
+          <double>6.9</double>
+          <double>7</double>
+          <double>8</double>
+          <double>9</double>
+          <double>10</double>
+          <double>11</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>0</double>
+          <double>1</double>
+          <double>1</double>
+          <double>0.3</double>
+          <double>0.3</double>
+          <double>0.3</double>
+          <double>0.08</double>
+          <double>0.01</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Phenology].Stage</XProperty>
+    </LinearInterpolationFunction>
+    <DMSupply>0</DMSupply>
+    <PartitionOrgans>
+      <string>Root</string>
+      <string>Pod</string>
+      <string>Grain</string>
+      <string>Leaf</string>
+      <string>Stem</string>
+    </PartitionOrgans>
+    <PartitionRules>
+      <string>magic</string>
+      <string>demand</string>
+      <string>demand</string>
+      <string>frac</string>
+      <string>remainder</string>
+    </PartitionRules>
+  </GenericArbitratorXY>
+  <Leaf1>
+    <Name>Leaf</Name>
+    <Biomass>
+      <Name>Live</Name>
+    </Biomass>
+    <Biomass>
+      <Name>Dead</Name>
+    </Biomass>
+    <RUEModel1>
+      <Name>Photosynthesis</Name>
+      <StageBasedInterpolation>
+        <Name>RUE</Name>
+        <Stages>
+          <string>Sowing</string>
+          <string>Germination</string>
+          <string>Emergence</string>
+          <string>EndOfJuvenile</string>
+          <string>FloralInitiation</string>
+          <string>Flowering</string>
+          <string>StartGrainFill</string>
+          <string>EndGrainFill</string>
+          <string>Maturity</string>
+          <string>HarvestRipe</string>
+          <string>EndCrop</string>
+        </Stages>
+        <Codes>
+          <double>0</double>
+          <double>0</double>
+          <double>1.24</double>
+          <double>1.24</double>
+          <double>1.24</double>
+          <double>1.24</double>
+          <double>1.24</double>
+          <double>1.24</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+        </Codes>
+        <Proportional>false</Proportional>
+      </StageBasedInterpolation>
+      <RUECO2Function>
+        <Name>RUEModifier</Name>
+        <PhotosyntheticPathway>C3</PhotosyntheticPathway>
+      </RUECO2Function>
+      <LinearInterpolationFunction>
+        <Name>TempStress</Name>
+        <XYPairs>
+          <Name>XYPairs</Name>
+          <X>
+            <double>0</double>
+            <double>10</double>
+            <double>25</double>
+            <double>35</double>
+          </X>
+          <Y>
+            <double>0</double>
+            <double>1</double>
+            <double>1</double>
+            <double>0</double>
+          </Y>
+        </XYPairs>
+        <XProperty>[Environment].MeanT</XProperty>
+      </LinearInterpolationFunction>
+    </RUEModel1>
+    <StageBasedInterpolation>
+      <Name>TE</Name>
+      <Stages>
+        <string>Sowing</string>
+        <string>Germination</string>
+        <string>Emergence</string>
+        <string>EndOfJuvenile</string>
+        <string>FloralInitiation</string>
+        <string>Flowering</string>
+        <string>StartGrainFill</string>
+        <string>EndGrainFill</string>
+        <string>Maturity</string>
+        <string>HarvestRipe</string>
+        <string>EndCrop</string>
+      </Stages>
+      <Codes>
+        <double>0</double>
+        <double>0</double>
+        <double>0.006</double>
+        <double>0.006</double>
+        <double>0.006</double>
+        <double>0.006</double>
+        <double>0.006</double>
+        <double>0.006</double>
+        <double>0.0025</double>
+        <double>0</double>
+        <double>0</double>
+      </Codes>
+      <Proportional>false</Proportional>
+    </StageBasedInterpolation>
+    <LinearInterpolationFunction>
+      <Name>TEModifier</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>350</double>
+          <double>700</double>
+          <double>1000</double>
+        </X>
+        <Y>
+          <double>1</double>
+          <double>1.37</double>
+          <double>1.69</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[IWeather].CO2</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>NConcCriticalModifier</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>350</double>
+          <double>700</double>
+          <double>1000</double>
+        </X>
+        <Y>
+          <double>1</double>
+          <double>0.93</double>
+          <double>0.9</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[IWeather].CO2</XProperty>
+    </LinearInterpolationFunction>
+    <PhaseBasedSwitch>
+      <Name>NodeFormationPeriod</Name>
+      <Start>Emergence</Start>
+      <End>HarvestRipe</End>
+    </PhaseBasedSwitch>
+    <LinearInterpolationFunction>
+      <Name>NodeAppearanceRate</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>20</double>
+        </X>
+        <Y>
+          <double>95</double>
+          <double>95</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Leaf].NodeNo</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>LeavesPerNode</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>2.5</double>
+          <double>6</double>
+        </X>
+        <Y>
+          <double>1</double>
+          <double>1</double>
+          <double>6</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Leaf].NodeNo</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>LeafSize</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>1</double>
+          <double>5</double>
+          <double>8</double>
+          <double>10</double>
+        </X>
+        <Y>
+          <double>1400</double>
+          <double>3700</double>
+          <double>4800</double>
+          <double>5600</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Leaf].NodeNumberNow</XProperty>
+    </LinearInterpolationFunction>
+    <Constant>
+      <Name>GrowthStructuralFractionStage</Name>
+      <FixedValue>1</FixedValue>
+    </Constant>
+    <LinearInterpolationFunction>
+      <Name>SLAMax</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>5</double>
+        </X>
+        <Y>
+          <double>27000</double>
+          <double>22000</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Leaf].LAI</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>LeafNumberFraction</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>0.1</double>
+          <double>0.8</double>
+          <double>1</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>1</double>
+          <double>1</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Leaf].LAIRatio</XProperty>
+    </LinearInterpolationFunction>
+    <PhaseBasedSwitch>
+      <Name>LeafSenescencePeriod</Name>
+      <Start>EndOfJuvenile(0.4)</Start>
+      <End>EndCrop</End>
+    </PhaseBasedSwitch>
+    <LinearInterpolationFunction>
+      <Name>LeafSenescenceFrost</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>-15</double>
+          <double>-5</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>0</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[IWeather].MinT</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>DMSenescenceFraction</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>1</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Leaf].FractionCanopySenescing</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>ExtinctionCoefficient</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>200</double>
+          <double>350</double>
+          <double>1000</double>
+        </X>
+        <Y>
+          <double>0.5</double>
+          <double>0.5</double>
+          <double>0.5</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[PlantSpatial].RowSpacing</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>ExtinctionCoefficientDead</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>200</double>
+          <double>350</double>
+          <double>1000</double>
+        </X>
+        <Y>
+          <double>0.3</double>
+          <double>0.3</double>
+          <double>0.3</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[PlantSpatial].RowSpacing</XProperty>
+    </LinearInterpolationFunction>
+    <StageBasedInterpolation>
+      <Name>NConcentrationMinimum</Name>
+      <Stages>
+        <string>Emergence</string>
+        <string>EndOfJuvenile</string>
+        <string>FloralInitiation</string>
+        <string>Flowering</string>
+        <string>EndGrainFill</string>
+        <string>HarvestRipe</string>
+      </Stages>
+      <Codes>
+        <double>0.025</double>
+        <double>0.025</double>
+        <double>0.021</double>
+        <double>0.01</double>
+        <double>0.005</double>
+        <double>0.0025</double>
+      </Codes>
+      <Proportional>true</Proportional>
+    </StageBasedInterpolation>
+    <StageBasedInterpolation>
+      <Name>NConcentrationMaximum</Name>
+      <Stages>
+        <string>Emergence</string>
+        <string>EndOfJuvenile</string>
+        <string>FloralInitiation</string>
+        <string>Flowering</string>
+        <string>EndGrainFill</string>
+        <string>HarvestRipe</string>
+      </Stages>
+      <Codes>
+        <double>0.07</double>
+        <double>0.07</double>
+        <double>0.05</double>
+        <double>0.02</double>
+        <double>0.01</double>
+        <double>0.005</double>
+      </Codes>
+      <Proportional>true</Proportional>
+    </StageBasedInterpolation>
+    <StageBasedInterpolation>
+      <Name>NConcentrationCritical</Name>
+      <Stages>
+        <string>Emergence</string>
+        <string>EndOfJuvenile</string>
+        <string>FloralInitiation</string>
+        <string>Flowering</string>
+        <string>EndGrainFill</string>
+        <string>HarvestRipe</string>
+      </Stages>
+      <Codes>
+        <double>0.063</double>
+        <double>0.063</double>
+        <double>0.042</double>
+        <double>0.015</double>
+        <double>0.008</double>
+        <double>0.0035</double>
+      </Codes>
+      <Proportional>true</Proportional>
+    </StageBasedInterpolation>
+    <Live>
+      <Name>Live</Name>
+    </Live>
+    <Dead>
+      <Name>Dead</Name>
+    </Dead>
+    <dlt_dm_pot_rue>0</dlt_dm_pot_rue>
+    <dlt_n_senesced_retrans>5.8629151214952273E-07</dlt_n_senesced_retrans>
+    <dlt_n_senesced_trans>0</dlt_n_senesced_trans>
+    <dlt_height>0</dlt_height>
+    <dlt_width>0</dlt_width>
+    <width>0</width>
+    <NodeNumberCorrection>2</NodeNumberCorrection>
+    <SLAMin>18000</SLAMin>
+    <FractionLeafSenescenceRate>0.035</FractionLeafSenescenceRate>
+    <NodeSenescenceRate>60</NodeSenescenceRate>
+    <NFactLeafSenescenceRate>0</NFactLeafSenescenceRate>
+    <MinTPLA>5</MinTPLA>
+    <NDeficitUptakeFraction>0.0001</NDeficitUptakeFraction>
+    <InitialWt>0.003</InitialWt>
+    <InitialNConcentration>0.063</InitialNConcentration>
+    <InitialTPLA>200</InitialTPLA>
+    <InitialLeafNumber>2</InitialLeafNumber>
+    <LAISenLight>7</LAISenLight>
+    <SenLightSlope>0.002</SenLightSlope>
+    <SenRateWater>0.1</SenRateWater>
+    <NSenescenceConcentration>0.005</NSenescenceConcentration>
+    <SenescenceDetachmentFraction>0</SenescenceDetachmentFraction>
+  </Leaf1>
+  <Stem1>
+    <Name>Stem</Name>
+    <Biomass>
+      <Name>Live</Name>
+    </Biomass>
+    <Biomass>
+      <Name>Dead</Name>
+    </Biomass>
+    <LinearInterpolationFunction>
+      <Name>RetainFraction</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>0.1</double>
+          <double>1</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>0.2</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Stem].FractionHeightRemoved</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>HeightFunction</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>6</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>1500</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Stem].GreenWtPerPlant</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>GrowthStructuralFractionStage</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>5.6</double>
+          <double>6.01</double>
+        </X>
+        <Y>
+          <double>0.7</double>
+          <double>0</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Phenology].Stage</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>DMSenescenceFraction</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>1</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>0</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Leaf].FractionCanopySenescing</XProperty>
+    </LinearInterpolationFunction>
+    <StageBasedInterpolation>
+      <Name>NConcentrationMinimum</Name>
+      <Stages>
+        <string>Emergence</string>
+        <string>EndOfJuvenile</string>
+        <string>FloralInitiation</string>
+        <string>Flowering</string>
+        <string>EndGrainFill</string>
+        <string>HarvestRipe</string>
+      </Stages>
+      <Codes>
+        <double>0.025</double>
+        <double>0.025</double>
+        <double>0.004</double>
+        <double>0.003</double>
+        <double>0.003</double>
+        <double>0.0025</double>
+      </Codes>
+      <Proportional>true</Proportional>
+    </StageBasedInterpolation>
+    <StageBasedInterpolation>
+      <Name>NConcentrationMaximum</Name>
+      <Stages>
+        <string>Emergence</string>
+        <string>EndOfJuvenile</string>
+        <string>FloralInitiation</string>
+        <string>Flowering</string>
+        <string>EndGrainFill</string>
+        <string>HarvestRipe</string>
+      </Stages>
+      <Codes>
+        <double>0.07</double>
+        <double>0.07</double>
+        <double>0.04</double>
+        <double>0.015</double>
+        <double>0.015</double>
+        <double>0.015</double>
+      </Codes>
+      <Proportional>true</Proportional>
+    </StageBasedInterpolation>
+    <StageBasedInterpolation>
+      <Name>NConcentrationCritical</Name>
+      <Stages>
+        <string>Emergence</string>
+        <string>EndOfJuvenile</string>
+        <string>FloralInitiation</string>
+        <string>Flowering</string>
+        <string>EndGrainFill</string>
+        <string>HarvestRipe</string>
+      </Stages>
+      <Codes>
+        <double>0.05</double>
+        <double>0.05</double>
+        <double>0.02</double>
+        <double>0.01</double>
+        <double>0.005</double>
+        <double>0.0035</double>
+      </Codes>
+      <Proportional>true</Proportional>
+    </StageBasedInterpolation>
+    <Live>
+      <Name>Live</Name>
+    </Live>
+    <Dead>
+      <Name>Dead</Name>
+    </Dead>
+    <dlt_n_senesced_retrans>4.344675059504535E-05</dlt_n_senesced_retrans>
+    <dlt_n_senesced_trans>0</dlt_n_senesced_trans>
+    <dlt_height>0</dlt_height>
+    <dlt_width>0</dlt_width>
+    <NDeficitUptakeFraction>0.0001</NDeficitUptakeFraction>
+    <NSenescenceConcentration>0.0025</NSenescenceConcentration>
+    <SenescenceDetachmentFraction>0</SenescenceDetachmentFraction>
+    <InitialWt>0.0016</InitialWt>
+    <InitialNConcentration>0.05</InitialNConcentration>
+  </Stem1>
+  <Pod>
+    <Name>Pod</Name>
+    <Biomass>
+      <Name>Live</Name>
+    </Biomass>
+    <Biomass>
+      <Name>Dead</Name>
+    </Biomass>
+    <RUECO2Function>
+      <Name>Fco2</Name>
+      <PhotosyntheticPathway>C3</PhotosyntheticPathway>
+    </RUECO2Function>
+    <StageBasedInterpolation>
+      <Name>TE</Name>
+      <Stages>
+        <string>Sowing</string>
+        <string>Germination</string>
+        <string>Emergence</string>
+        <string>EndOfJuvenile</string>
+        <string>FloralInitiation</string>
+        <string>Flowering</string>
+        <string>StartGrainFill</string>
+        <string>EndGrainFill</string>
+        <string>Maturity</string>
+        <string>HarvestRipe</string>
+        <string>EndCrop</string>
+      </Stages>
+      <Codes>
+        <double>0</double>
+        <double>0</double>
+        <double>0.006</double>
+        <double>0.006</double>
+        <double>0.006</double>
+        <double>0.006</double>
+        <double>0.006</double>
+        <double>0.006</double>
+        <double>0.0025</double>
+        <double>0</double>
+        <double>0</double>
+      </Codes>
+      <Proportional>false</Proportional>
+    </StageBasedInterpolation>
+    <LinearInterpolationFunction>
+      <Name>FractionGrainInPod</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>1</double>
+          <double>2</double>
+          <double>3</double>
+          <double>4</double>
+          <double>4.9</double>
+          <double>5</double>
+          <double>5.4</double>
+          <double>6</double>
+          <double>6.9</double>
+          <double>7</double>
+          <double>8</double>
+          <double>9</double>
+          <double>10</double>
+          <double>11</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0.33</double>
+          <double>0.33</double>
+          <double>0.33</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Phenology].Stage</XProperty>
+    </LinearInterpolationFunction>
+    <Constant>
+      <Name>GrowthStructuralFractionStage</Name>
+      <FixedValue>1</FixedValue>
+    </Constant>
+    <LinearInterpolationFunction>
+      <Name>DMSenescenceFraction</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>1</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>0</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Leaf].FractionCanopySenescing</XProperty>
+    </LinearInterpolationFunction>
+    <StageBasedInterpolation>
+      <Name>NConcentrationMinimum</Name>
+      <Stages>
+        <string>Emergence</string>
+        <string>EndOfJuvenile</string>
+        <string>FloralInitiation</string>
+        <string>Flowering</string>
+        <string>EndGrainFill</string>
+        <string>HarvestRipe</string>
+      </Stages>
+      <Codes>
+        <double>0.025</double>
+        <double>0.025</double>
+        <double>0.004</double>
+        <double>0.003</double>
+        <double>0.003</double>
+        <double>0.0025</double>
+      </Codes>
+      <Proportional>true</Proportional>
+    </StageBasedInterpolation>
+    <StageBasedInterpolation>
+      <Name>NConcentrationMaximum</Name>
+      <Stages>
+        <string>Emergence</string>
+        <string>EndOfJuvenile</string>
+        <string>FloralInitiation</string>
+        <string>Flowering</string>
+        <string>EndGrainFill</string>
+        <string>HarvestRipe</string>
+      </Stages>
+      <Codes>
+        <double>0.07</double>
+        <double>0.07</double>
+        <double>0.04</double>
+        <double>0.015</double>
+        <double>0.015</double>
+        <double>0.015</double>
+      </Codes>
+      <Proportional>true</Proportional>
+    </StageBasedInterpolation>
+    <StageBasedInterpolation>
+      <Name>NConcentrationCritical</Name>
+      <Stages>
+        <string>Emergence</string>
+        <string>EndOfJuvenile</string>
+        <string>FloralInitiation</string>
+        <string>Flowering</string>
+        <string>EndGrainFill</string>
+        <string>HarvestRipe</string>
+      </Stages>
+      <Codes>
+        <double>0.05</double>
+        <double>0.05</double>
+        <double>0.02</double>
+        <double>0.01</double>
+        <double>0.005</double>
+        <double>0.0035</double>
+      </Codes>
+      <Proportional>true</Proportional>
+    </StageBasedInterpolation>
+    <Live>
+      <Name>Live</Name>
+    </Live>
+    <Dead>
+      <Name>Dead</Name>
+    </Dead>
+    <InitialWt>0</InitialWt>
+    <InitialNConcentration>0.063</InitialNConcentration>
+    <NDeficitUptakeFraction>0.0001</NDeficitUptakeFraction>
+    <NSenescenceConcentration>0.007</NSenescenceConcentration>
+    <SenescenceDetachmentFraction>0</SenescenceDetachmentFraction>
+  </Pod>
+  <Grain>
+    <Name>Grain</Name>
+    <Biomass>
+      <Name>Live</Name>
+    </Biomass>
+    <Biomass>
+      <Name>Dead</Name>
+    </Biomass>
+    <PhaseBasedSwitch>
+      <Name>GrainGrowthPeriod</Name>
+      <Start>Flowering</Start>
+      <End>EndGrainFill</End>
+    </PhaseBasedSwitch>
+    <PhaseBasedSwitch>
+      <Name>ReproductivePeriod</Name>
+      <Start>Flowering</Start>
+      <End>EndGrainFill</End>
+    </PhaseBasedSwitch>
+    <LinearInterpolationFunction>
+      <Name>RelativeGrainFill</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>26</double>
+          <double>35</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>1</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Environment].MeanT</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>RelativeGrainNFill</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>25</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Environment].MeanT</XProperty>
+    </LinearInterpolationFunction>
+    <Constant>
+      <Name>GrowthStructuralFractionStage</Name>
+      <FixedValue>1</FixedValue>
+    </Constant>
+    <LinearInterpolationFunction>
+      <Name>DMSenescenceFraction</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>1</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>0</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Leaf].FractionCanopySenescing</XProperty>
+    </LinearInterpolationFunction>
+    <StageBasedInterpolation>
+      <Name>NConcentrationMinimum</Name>
+      <Stages>
+        <string>Emergence</string>
+        <string>EndOfJuvenile</string>
+        <string>FloralInitiation</string>
+        <string>Flowering</string>
+        <string>EndGrainFill</string>
+        <string>HarvestRipe</string>
+      </Stages>
+      <Codes>
+        <double>0</double>
+        <double>0</double>
+        <double>0</double>
+        <double>0</double>
+        <double>0.014</double>
+        <double>0.014</double>
+      </Codes>
+      <Proportional>true</Proportional>
+    </StageBasedInterpolation>
+    <StageBasedInterpolation>
+      <Name>NConcentrationMaximum</Name>
+      <Stages>
+        <string>Emergence</string>
+        <string>EndOfJuvenile</string>
+        <string>FloralInitiation</string>
+        <string>Flowering</string>
+        <string>EndGrainFill</string>
+        <string>HarvestRipe</string>
+      </Stages>
+      <Codes>
+        <double>0</double>
+        <double>0</double>
+        <double>0</double>
+        <double>0</double>
+        <double>0.03</double>
+        <double>0.03</double>
+      </Codes>
+      <Proportional>true</Proportional>
+    </StageBasedInterpolation>
+    <StageBasedInterpolation>
+      <Name>NConcentrationCritical</Name>
+      <Stages>
+        <string>Emergence</string>
+        <string>EndOfJuvenile</string>
+        <string>FloralInitiation</string>
+        <string>Flowering</string>
+        <string>EndGrainFill</string>
+        <string>HarvestRipe</string>
+      </Stages>
+      <Codes>
+        <double>0</double>
+        <double>0</double>
+        <double>0</double>
+        <double>0</double>
+        <double>0.03</double>
+        <double>0.03</double>
+      </Codes>
+      <Proportional>true</Proportional>
+    </StageBasedInterpolation>
+    <Live>
+      <Name>Live</Name>
+    </Live>
+    <Dead>
+      <Name>Dead</Name>
+    </Dead>
+    <LinearInterpolationFunction>
+      <Name>TempStress</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>10</double>
+          <double>25</double>
+          <double>35</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>1</double>
+          <double>1</double>
+          <double>0</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Environment].MeanT</XProperty>
+    </LinearInterpolationFunction>
+    <dlt_dm_pot_rue>0</dlt_dm_pot_rue>
+    <dlt_n_senesced_retrans>0</dlt_n_senesced_retrans>
+    <dlt_n_senesced_trans>0</dlt_n_senesced_trans>
+    <dlt_height>0</dlt_height>
+    <dlt_width>0</dlt_width>
+    <InitialWt>0</InitialWt>
+    <InitialNConcentration>0</InitialNConcentration>
+    <GrainsPerGramStem>25</GrainsPerGramStem>
+    <PotentialGrainFillingRate>0.002</PotentialGrainFillingRate>
+    <PotentialGrainGrowthRate>0.001</PotentialGrainGrowthRate>
+    <MinimumGrainNFillingRate>1.5E-05</MinimumGrainNFillingRate>
+    <CriticalGrainFillingRate>0</CriticalGrainFillingRate>
+    <GrainMaxDailyNConc>0.03</GrainMaxDailyNConc>
+    <PotentialGrainNFillingRate>5.5E-05</PotentialGrainNFillingRate>
+    <MaxGrainSize>0.041</MaxGrainSize>
+    <NSenescenceConcentration>0.014</NSenescenceConcentration>
+    <SenescenceDetachmentFraction>0</SenescenceDetachmentFraction>
+    <WaterContentFraction>0.125</WaterContentFraction>
+  </Grain>
+  <NStress>
+    <Name>NStress</Name>
+    <N_fact_photo>1.5</N_fact_photo>
+    <N_fact_pheno>100</N_fact_pheno>
+    <N_fact_expansion>1</N_fact_expansion>
+    <N_fact_grain>1.5</N_fact_grain>
+  </NStress>
+  <SWStress>
+    <Name>SWStress</Name>
+    <LinearInterpolationFunction>
+      <Name>ExpansionFactor</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0.1</double>
+          <double>1.1</double>
+        </X>
+        <Y>
+          <double>0</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Wheat].SWSupplyDemandRatio</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>PhenoFactor</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>0.16</double>
+        </X>
+        <Y>
+          <double>1</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Root].SWAvailRatio</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>FixationFactor</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>0.5</double>
+          <double>0.95</double>
+          <double>1</double>
+        </X>
+        <Y>
+          <double>1</double>
+          <double>1</double>
+          <double>1</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Root].SWAvailRatio</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>OxygenDeficitPhotoFactor</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0</double>
+          <double>0.8</double>
+          <double>1</double>
+        </X>
+        <Y>
+          <double>1</double>
+          <double>1</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Root].WetRootFraction</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>PhenoFlowerFactor</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0.2</double>
+          <double>0.5</double>
+          <double>1</double>
+        </X>
+        <Y>
+          <double>1</double>
+          <double>1</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Root].SWAvailRatio</XProperty>
+    </LinearInterpolationFunction>
+    <LinearInterpolationFunction>
+      <Name>PhenoGrainFillingFactor</Name>
+      <XYPairs>
+        <Name>XYPairs</Name>
+        <X>
+          <double>0.2</double>
+          <double>0.5</double>
+          <double>1</double>
+        </X>
+        <Y>
+          <double>1</double>
+          <double>1</double>
+          <double>1</double>
+        </Y>
+      </XYPairs>
+      <XProperty>[Root].SWAvailRatio</XProperty>
+    </LinearInterpolationFunction>
+  </SWStress>
+  <LinearInterpolationFunction>
+    <Name>TempStress</Name>
+    <XYPairs>
+      <Name>XYPairs</Name>
+      <X>
+        <double>0</double>
+        <double>10</double>
+        <double>25</double>
+        <double>35</double>
+      </X>
+      <Y>
+        <double>0</double>
+        <double>1</double>
+        <double>1</double>
+        <double>0</double>
+      </Y>
+    </XYPairs>
+    <XProperty>[Environment].MeanT</XProperty>
+  </LinearInterpolationFunction>
+  <RadiationPartitioning>
+    <Name>RadiationPartitioning</Name>
+    <FractIncidentRadn>1</FractIncidentRadn>
+    <RadiationPartitioningOrder>
+      <string>Pod</string>
+      <string>Grain</string>
+      <string>Leaf</string>
+    </RadiationPartitioningOrder>
+  </RadiationPartitioning>
+  <StageBasedInterpolation>
+    <Name>NFixRate</Name>
+    <Stages>
+      <string>Sowing</string>
+      <string>Germination</string>
+      <string>Emergence</string>
+      <string>EndOfJuvenile</string>
+      <string>FloralInitiation</string>
+      <string>Flowering</string>
+      <string>StartGrainFill</string>
+      <string>EndGrainFill</string>
+      <string>Maturity</string>
+      <string>HarvestRipe</string>
+      <string>EndCrop</string>
+    </Stages>
+    <Codes>
+      <double>0</double>
+      <double>0</double>
+      <double>0</double>
+      <double>0</double>
+      <double>0</double>
+      <double>0</double>
+      <double>0</double>
+      <double>0</double>
+      <double>0</double>
+      <double>0</double>
+      <double>0</double>
+    </Codes>
+    <Proportional>false</Proportional>
+  </StageBasedInterpolation>
+  <CompositeBiomass>
+    <Name>AboveGroundLive</Name>
+    <Propertys>
+      <string>[Leaf].Live</string>
+      <string>[Stem].Live</string>
+      <string>[Pod].Live</string>
+      <string>[Grain].Live</string>
+    </Propertys>
+  </CompositeBiomass>
+  <CompositeBiomass>
+    <Name>AboveGroundDead</Name>
+    <Propertys>
+      <string>[Leaf].Dead</string>
+      <string>[Stem].Dead</string>
+      <string>[Pod].Dead</string>
+      <string>[Grain].Dead</string>
+    </Propertys>
+  </CompositeBiomass>
+  <CompositeBiomass>
+    <Name>BelowGroundLive</Name>
+    <Propertys>
+      <string>[Root].Live</string>
+    </Propertys>
+  </CompositeBiomass>
+  <CompositeBiomass>
+    <Name>BelowGroundDead</Name>
+    <Propertys>
+      <string>[Root].Dead</string>
+    </Propertys>
+  </CompositeBiomass>
+  <CompositeBiomass>
+    <Name>TotalLive</Name>
+    <Propertys>
+      <string>[Leaf].Live</string>
+      <string>[Stem].Live</string>
+      <string>[Pod].Live</string>
+      <string>[Grain].Live</string>
+      <string>[Root].Live</string>
+    </Propertys>
+  </CompositeBiomass>
+  <CompositeBiomass>
+    <Name>TotalDead</Name>
+    <Propertys>
+      <string>[Leaf].Dead</string>
+      <string>[Stem].Dead</string>
+      <string>[Pod].Dead</string>
+      <string>[Grain].Dead</string>
+      <string>[Root].Dead</string>
+    </Propertys>
+  </CompositeBiomass>
+  <CompositeBiomass>
+    <Name>AboveGround</Name>
+    <Propertys>
+      <string>[Leaf].Live</string>
+      <string>[Stem].Live</string>
+      <string>[Pod].Live</string>
+      <string>[Grain].Live</string>
+      <string>[Leaf].Dead</string>
+      <string>[Stem].Dead</string>
+      <string>[Pod].Dead</string>
+      <string>[Grain].Dead</string>
+    </Propertys>
+  </CompositeBiomass>
+  <CompositeBiomass>
+    <Name>BelowGround</Name>
+    <Propertys>
+      <string>[Root].Live</string>
+      <string>[Root].Dead</string>
+    </Propertys>
+  </CompositeBiomass>
+  <CompositeBiomass>
+    <Name>Total</Name>
+    <Propertys>
+      <string>[AboveGroundLive]</string>
+      <string>[AboveGroundDead]</string>
+      <string>[BelowGroundLive]</string>
+      <string>[BelowGroundDead]</string>
+    </Propertys>
+  </CompositeBiomass>
+  <CompositeBiomass>
+    <Name>Head</Name>
+    <Propertys>
+      <string>[Pod].Live</string>
+      <string>[Grain].Live</string>
+      <string>[Pod].Dead</string>
+      <string>[Grain].Dead</string>
+    </Propertys>
+  </CompositeBiomass>
+  <CompositeBiomass>
+    <Name>VegetativeLive</Name>
+    <Propertys>
+      <string>[Leaf].Live</string>
+      <string>[Stem].Live</string>
+      <string>[Pod].Live</string>
+    </Propertys>
+  </CompositeBiomass>
+  <CompositeBiomass>
+    <Name>VegetativeDead</Name>
+    <Propertys>
+      <string>[Leaf].Dead</string>
+      <string>[Stem].Dead</string>
+      <string>[Pod].Dead</string>
+    </Propertys>
+  </CompositeBiomass>
+  <CompositeBiomass>
+    <Name>Vegetative</Name>
+    <Propertys>
+      <string>[Leaf].Live</string>
+      <string>[Stem].Live</string>
+      <string>[Pod].Live</string>
+      <string>[Leaf].Dead</string>
+      <string>[Stem].Dead</string>
+      <string>[Pod].Dead</string>
+    </Propertys>
+  </CompositeBiomass>
+  <StageBasedInterpolation>
+    <Name>StageCode</Name>
+    <Stages>
+      <string>Sowing</string>
+      <string>Germination</string>
+      <string>Emergence</string>
+      <string>EndOfJuvenile</string>
+      <string>FloralInitiation</string>
+      <string>Flowering</string>
+      <string>StartGrainFill</string>
+      <string>EndGrainFill</string>
+      <string>Maturity</string>
+      <string>HarvestRipe</string>
+      <string>EndCrop</string>
+    </Stages>
+    <Codes>
+      <double>1</double>
+      <double>2</double>
+      <double>3</double>
+      <double>4</double>
+      <double>5</double>
+      <double>6</double>
+      <double>7</double>
+      <double>8</double>
+      <double>9</double>
+      <double>10</double>
+      <double>11</double>
+    </Codes>
+    <Proportional>false</Proportional>
+  </StageBasedInterpolation>
+  <PlantSpatial1>
+    <Name>PlantSpatial</Name>
+  </PlantSpatial1>
+  <Environment>
+    <Name>Environment</Name>
+    <CO2>350</CO2>
+  </Environment>
+  <PStress>
+    <Name>PStress</Name>
+  </PStress>
+  <Zadok>
+    <Name>Zadok</Name>
+  </Zadok>
+  <Summariser>
+    <Name>Summariser</Name>
+  </Summariser>
+  <Cultivar>
+    <Name>GattonHartog</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.5</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.5</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>h45</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.5</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 1.5</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Rongotea</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.0</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 4.0</Command>
+    <Command>[Grain].MaxGrainSize = 0.047</Command>
+    <Command>[Grain].GrainsPerGramStem = 22</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Hartog</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.5</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.0</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Gamenya</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.6</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 2.0</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 630.0</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Spear</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.5</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.5</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 555.0</Command>
+    <Command>[Grain].GrainsPerGramStem = 20</Command>
+    <Command>[Grain].MaxGrainSize = 0.045</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 580</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Gutha</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.5</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.0</Command>
+    <Command>[Grain].GrainsPerGramStem = 20</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Wilgoyne</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.4</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 1.8</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 555.0</Command>
+    <Command>[Grain].GrainsPerGramStem = 20</Command>
+    <Command>[Grain].MaxGrainSize = 0.045</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 580</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Xenos</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.5</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 4.6</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 380</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 520.0</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Capo</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 5.0</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 4.9</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 380</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 520.0</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>PendletonTall</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 5.0</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 5.0</Command>
+    <Command>[Grain].GrainsPerGramStem = 20</Command>
+    <Command>[Grain].MaxGrainSize = 0.045</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 600</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>PendletonDwarf</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 5.0</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 5.0</Command>
+    <Command>[Grain].GrainsPerGramStem = 27</Command>
+    <Command>[Grain].MaxGrainSize = 0.045</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.0028</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.001</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 600</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Truth</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.5</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 400</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 580</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 120</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 590</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.002</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.001</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.5E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>OpenLoop</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.1</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.6</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 410</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 600</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 125</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 610</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.0021</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.0011</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom0</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.13973206076196</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.6337701632624</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 433.44657349702</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 593.741373821509</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 137.008940316342</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 601.453469923288</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00213995633018798</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.000928339878073898</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.1310764456479E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom1</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.09095864071256</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.56975529173748</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 394.140297466333</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 553.577058002005</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 126.425858163346</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 628.580078916017</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00236654463421843</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00103665064014171</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.91461389890152E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom2</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.11528169628473</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.64752239383968</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 377.377412988012</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 548.444850787493</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 135.274609398195</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 606.646689301494</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00216858123586497</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00094744488660026</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.04617961622594E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom3</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.07786595303494</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.58730578050991</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 393.12989471948</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 557.619748501485</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 132.403706215387</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 630.235304736954</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00234818254003365</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00102993445150257</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.7405054255721E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom4</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.21643442311383</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.65406733613178</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 382.706015354344</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 566.518950047041</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 133.602747567993</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 609.922692931223</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00218280743858357</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00096910678322977</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 4.41423160537935E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom5</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.07235057284823</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.56496662840287</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 393.494889532951</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 562.849786315753</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 127.685951144599</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 604.8257485989</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00232015004789959</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.001030308953229</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.02003553657309E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom6</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.16056629325533</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.65314059842098</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 430.156311685959</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 579.816831862975</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 131.916367331294</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 584.355251455108</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00218101788593231</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.000992736726505933</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 4.61320276478223E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom7</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.07697097095388</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.61774998078246</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 425.878201155102</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 568.977049817249</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 125.095205220686</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 608.194082401151</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00228468777512578</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00103763412516159</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.539249422045E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom8</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.11971688380333</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.64391712880567</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 427.030405566597</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 590.727526842613</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 130.244169507879</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 588.780692266031</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00215809181129435</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00101724272833854</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 4.78426981461693E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom9</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.89093207691755</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.65087281135977</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 419.743834670708</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 575.632209934238</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 123.170638379697</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 562.405528060142</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00224428787546848</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00105233849354604</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.60684937465211E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom10</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.08773310165868</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.62092992591805</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 423.243394661646</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 599.653575338713</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 128.647648490545</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 594.570252312555</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00258767115143488</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00104131813341507</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 4.92855598340653E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom11</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.91583745148914</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.67406583444089</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 414.447648933294</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 582.405601313874</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 121.760227937356</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 563.001231109768</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00220149336856227</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00107994156806521</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.64281763117534E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom12</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.06339308511566</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.83186857630114</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 418.976957409456</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 606.616541996034</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 127.200671773917</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 602.203491662816</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.0025034316117216</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.0010635490387887</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.04402723368134E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom13</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.92950180703258</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.68887714696794</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 410.163444965166</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 588.869070041246</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 120.819763936979</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 564.529769416177</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00215835604412158</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.000875769626390984</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.64480537453051E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom14</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.04641616086605</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.79036006558826</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 414.076052182924</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 611.543314002842</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 125.983363267331</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 551.44322520901</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00245136811628335</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00108241552320455</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.12782543090539E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom15</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.94527160686617</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.41801618488652</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 407.081924804321</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 594.597516091475</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 134.816505117689</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 567.53947770441</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.0021070863506238</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00109450350360214</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.61543420346806E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom16</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.03671835540897</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.59956425370787</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 438.522221569276</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 614.343689099758</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 131.585270173313</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 570.742327715631</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00240058878816048</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00100766687869131</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.17680603161917E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom17</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.96427303588639</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.46672654361892</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 405.433256403835</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 574.388176831442</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 120.258570681523</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 571.932902236756</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00223837979008127</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.000965891899418011</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.55895504401948E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom18</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.03421968489595</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.72623877148616</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 426.366026916759</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 614.908698940884</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 124.660608781092</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 584.463616893951</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00234794170892161</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00101472044166239</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.1867088441183E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom19</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.98597744518787</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.50692015149248</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 405.662256455734</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 598.270905494145</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 130.559432815408</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 577.434896691952</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00214380345398432</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00109144502732514</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.48062602647668E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom20</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.03888276648908</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.68817709341855</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 417.683230624561</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 612.994112856913</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 130.266135545645</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 595.809980009563</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00229425458212386</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00102736930954743</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.14659092362396E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom21</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.00932460793829</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.54196720044219</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 369.578819372193</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 609.623562825671</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 128.69590224581</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 583.689223908825</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00207322721535321</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.000955419756121555</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.38635229085875E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom22</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.05113543338031</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.70693951684213</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 410.793300638107</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 607.365399536899</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 129.217969591467</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 605.281670869115</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00224156143890409</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00104514221289604</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 6.22734074298451E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom23</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.03302250683711</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.57218635879703</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 374.637598424206</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 617.748769955832</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 127.045426873329</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 590.296683524959</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.0020199370486456</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.000952711669654851</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.28219455668309E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom24</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.07503608810636</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.71858201266229</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 405.39562986573</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 670.883586756718</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 127.982050123963</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 612.90435213589</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00229457200134721</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00106927615566594</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 6.00495242596846E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom25</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.13955741375027</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.59713267157786</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 376.555249343449</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 623.286605886416</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 125.663802420038</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 596.840159295457</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00198225889045879</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.000953567330139795</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.17300811000815E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom26</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.86423333944413</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.72292351479364</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 401.435278917262</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 658.741104576742</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 126.525218538469</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 618.582171896677</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00214937175245732</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.000881279225230722</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.89068572726896E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom27</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.07576479672886</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.61614947450955</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 378.987285273717</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 626.47168272717</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 124.612626428333</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 602.920217751747</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.001959545492916</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.000959941415511781</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.04851938049857E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom28</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.91519487957204</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.72051366835111</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 398.91328166682</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 649.553507042966</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 135.168050484099</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 622.193059639304</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00211560461749976</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.000950656482038666</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.777855125866E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom29</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.09166983607261</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.6285128348255</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 382.195806101954</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 627.470717861032</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 123.963126349713</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 608.581408322928</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00213567480778353</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.000971544933127537</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.47067996092239E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom30</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.09130330450772</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.71214882450385</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 397.83665028452</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 564.888162779181</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 131.178451586127</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 623.59807455873</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00230091062607266</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.000997486648824914</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.65695909802957E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom31</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.21015943391417</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.63331884316387</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 386.087211339092</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 567.556779123142</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 123.834729838577</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 600.87269097415</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00214449230558041</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.000987512711257424</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.2134449757644E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom32</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.09132012882723</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.69880620342175</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 398.219138669423</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 568.786533909909</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 128.435511600189</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 622.549845646705</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00227867225049615</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.0010363922562428</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.52969963994154E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom33</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.16895488630818</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.62863813355861</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 390.457438315916</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 578.205145332733</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 113.072802192884</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 613.666257441598</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.002127512408108</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00100670958327765</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.02209651551174E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom34</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.97183164712489</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.68159305118681</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 400.15020833723</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 573.870817535841</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 126.238697083712</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 618.072058295368</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00224722407651791</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00106945171367314</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.40106734655003E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom35</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.13425458202895</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.85036449892542</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 395.053208922277</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 587.576104417786</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 114.974936144385</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 622.919592361362</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00245597541796911</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00102784994527046</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 4.87425468242539E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom36</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.9642063274583</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.66165509138035</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 404.259507126606</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 579.783975223447</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 124.475816754184</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 681.653315225758</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00220814072074504</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00109678731877006</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.27734054858073E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom37</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.10550685571951</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.79790837047133</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 399.596657178718</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 595.529133710103</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 115.291557229851</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 629.51959776099</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.0024377979498791</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.0010495863258138</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 4.76499844187984E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom38</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.96065935384814</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.63991192585073</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 360.829858232507</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 586.191944177816</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 123.129397992484</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 669.739621518437</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00216063612318105</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00111801507778694</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.48326571752703E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom39</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.08293817127102</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.77851230830495</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 411.568532040421</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 601.844642980132</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 115.789864222115</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 633.730712880164</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00241946588848532</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00107065684387189</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 4.98104587444363E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom40</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.96319462194555</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.61498486162829</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 411.91237419176</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 593.009701328807</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 122.204568652817</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 573.889404700381</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.002495101492454</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00113262796340275</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.50441122567253E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom41</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.06697054342712</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.75909695810822</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 446.15672620979</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 606.278510705843</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 116.558631952918</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 561.354370527579</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00239326867149662</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00109107790420223</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.05446458605481E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom42</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.97153555482039</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.71950770774778</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 409.319574636677</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 558.945538994728</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 121.710158326478</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 575.301174239094</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00234757215569093</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00114006352109561</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.49170182395711E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom43</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.05807212109743</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.73740621933879</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 435.533975846586</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 608.5424055682</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 117.573188831652</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 573.294356757999</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00235913790701012</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00104386866989261</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.09075532930021E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom44</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.98486814078415</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.66373809964291</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 408.526437400052</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 578.758887646503</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 121.656787850198</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 578.39759643075</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.002252059305017</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00113947016332203</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.44896286980294E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom45</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.05686403617494</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.71370082910772</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 427.123444199495</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 608.111407190749</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 118.77509715703</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 583.957734580343</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00231872571831538</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00109148233872184</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.07103925875335E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom46</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.00211686075771</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.62273744032755</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 388.113657516438</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 591.956598654186</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 122.073455024439</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 582.869881173664</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00217515727755078</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.0011281722103538</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.38035039799333E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom47</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.06490105269429</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.68895007466862</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 419.950848206022</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 600.674334686379</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 120.090536021407</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 593.525058882487</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00227436906203432</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00112592968625273</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.82864933566645E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom48</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 2.02205101347394</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.59049466306278</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 385.553907494818</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 602.183119372834</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 123.112607812193</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 588.382890833022</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00211218270645929</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00133987035720572</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.28945088151339E-05</Command>
+  </Cultivar>
+  <Cultivar>
+    <Name>Custom49</Name>
+    <Command>[Phenology].Vernalisation.VernSens = 1.78609742577409</Command>
+    <Command>[Phenology].Vernalisation.PhotopSens = 3.67124314475706</Command>
+    <Command>[Phenology].EndOfJuvenileToFloralInitiation.Target.FixedValue = 413.876520692796</Command>
+    <Command>[Phenology].FloralInitiationToFlowering.Target.FixedValue = 657.727774395268</Command>
+    <Command>[Phenology].FloweringToStartGrainFill.Target.FixedValue = 127.813071719992</Command>
+    <Command>[Phenology].StartGrainFillToEndGrainFill.Target.FixedValue = 601.853398861448</Command>
+    <Command>[Grain].PotentialGrainFillingRate = 0.00222874200520207</Command>
+    <Command>[Grain].PotentialGrainGrowthRate = 0.00108099149687448</Command>
+    <Command>[Grain].PotentialGrainNFillingRate = 5.80416193287203E-05</Command>
+  </Cultivar>
+</Plant15>
