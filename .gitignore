@@ -34,6 +34,7 @@ ApsimX.DA/Models/AssemblyVersion.cs
 ApsimX.DA/Documentation/html
 *.db
 packages/
+
 ApsimX.DA/Tests/MultiZoneManagement/MultiFieldMultiZoneManagementBasic.db.sum
 *.sum
 ApsimX.DA/Documents/
@@ -45,9 +46,7 @@ ApsimX.DA/Prototypes/SCRUM/SCRUM.apsimx.orig
 /ApsimX.DA/Prototypes/Grapevine/Observations/PhenoDataObservation - Copy.xlsx
 
 
-
 APSIM.Shared/Utility/obj/
-APSIM.Shared/packages/
 APSIM.Shared/Bin/
 APSIM.Shared/APSIM.Shared.Soils/obj/
 APSIM.Shared/APSIM.Shared.Utility/obj/
@@ -55,3 +54,4 @@ APSIM.Shared/obj/Debug/APSIM.Shared.csproj.FileListAbsolute.txt
 
 
 
+Doc/
