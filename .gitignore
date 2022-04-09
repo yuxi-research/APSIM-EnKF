@@ -33,7 +33,6 @@ ApsimX.DA/Models/AssemblyVersion.cs
 *MaizeTestModel*
 ApsimX.DA/Documentation/html
 *.db
-packages/
 
 ApsimX.DA/Tests/MultiZoneManagement/MultiFieldMultiZoneManagementBasic.db.sum
 *.sum
