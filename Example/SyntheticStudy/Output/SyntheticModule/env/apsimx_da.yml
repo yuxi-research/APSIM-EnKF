@@ -1,0 +1,42 @@
+name: apsimx_da
+channels:
+  - anaconda-fusion
+  - defaults
+dependencies:
+  - blas=1.0=mkl
+  - ca-certificates=2019.5.15=0
+  - certifi=2019.3.9=py36_0
+  - cycler=0.10.0=py36h009560c_0
+  - freetype=2.9.1=ha9979f8_1
+  - icc_rt=2019.0.0=h0cc432a_1
+  - icu=58.2=ha66f8fd_1
+  - intel-openmp=2019.4=245
+  - jpeg=9b=hb83a4c4_2
+  - kiwisolver=1.1.0=py36ha925a31_0
+  - libpng=1.6.37=h2a8f88b_0
+  - matplotlib=2.2.2=py36had4c4a9_2
+  - mkl=2018.0.3=1
+  - mkl_fft=1.0.6=py36hdbbee80_0
+  - mkl_random=1.0.1=py36h77b88f5_1
+  - numpy=1.14.3=py36h9fa60d3_1
+  - numpy-base=1.14.3=py36h555522e_1
+  - openssl=1.1.1c=he774522_1
+  - pip=19.1.1=py36_0
+  - pyparsing=2.4.0=py_0
+  - pyqt=5.9.2=py36h6538335_2
+  - python=3.6.8=h9f7ef89_7
+  - python-dateutil=2.8.0=py36_0
+  - pytz=2019.1=py_0
+  - qt=5.9.7=vc14h73c81de_0
+  - setuptools=41.0.1=py36_0
+  - sip=4.19.8=py36h6538335_0
+  - six=1.12.0=py36_0
+  - sqlite=3.28.0=he774522_0
+  - tornado=6.0.2=py36he774522_0
+  - vc=14.1=h0510ff6_4
+  - vs2015_runtime=14.15.26706=h3a45250_4
+  - wheel=0.33.4=py36_0
+  - wincertstore=0.2=py36h7fe50ca_0
+  - zlib=1.2.11=h62dcd97_3
+prefix: D:\ProgramData\Anaconda3\envs\apsimx_da
+

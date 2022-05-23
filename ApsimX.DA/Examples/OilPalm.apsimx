@@ -1,0 +1,1964 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Simulations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Simulations</Name>
+  <Simulation>
+    <Name>OilPalm</Name>
+    <Weather>
+      <Name>Weather</Name>
+      <FileName>%root%\Examples\WeatherFiles\Popondetta.met</FileName>
+    </Weather>
+    <Clock>
+      <Name>Clock</Name>
+      <StartDate>1996-03-01T00:00:00</StartDate>
+      <EndDate>2010-09-29T00:00:00</EndDate>
+    </Clock>
+    <Summary>
+      <Name>Summary</Name>
+    </Summary>
+    <Zone>
+      <Name>Block</Name>
+      <Fertiliser>
+        <Name>Fertiliser</Name>
+      </Fertiliser>
+      <SurfaceOrganicMatter>
+        <Name>SurfaceOM</Name>
+        <ResidueTypes>
+          <Name>ResidueTypes</Name>
+          <LoadFromResource>ResidueTypes</LoadFromResource>
+        </ResidueTypes>
+        <TillageTypes>
+          <Name>TillageTypesList</Name>
+          <TillageType />
+        </TillageTypes>
+        <Pools>
+          <Pool>
+            <PoolName>oilpalm</PoolName>
+            <ResidueType>oilpalm</ResidueType>
+            <Mass>24000</Mass>
+            <CNRatio>39</CNRatio>
+            <CPRatio>NaN</CPRatio>
+            <StandingFraction>0</StandingFraction>
+          </Pool>
+          <Pool>
+            <PoolName>oilpalmstem</PoolName>
+            <ResidueType>oilpalmstem</ResidueType>
+            <Mass>63000</Mass>
+            <CNRatio>145</CNRatio>
+            <CPRatio>NaN</CPRatio>
+            <StandingFraction>0</StandingFraction>
+          </Pool>
+        </Pools>
+        <PoolName>oilpalm oilpalmstem</PoolName>
+        <type>oilpalm oilpalmstem</type>
+        <mass>24000 63000</mass>
+        <standing_fraction>0 0</standing_fraction>
+        <cpr />
+        <cnr>39 145</cnr>
+        <CriticalResidueWeight>2000</CriticalResidueWeight>
+        <OptimumDecompTemp>20</OptimumDecompTemp>
+        <MaxCumulativeEOS>20</MaxCumulativeEOS>
+        <CNRatioDecompCoeff>0.277</CNRatioDecompCoeff>
+        <CNRatioDecompThreshold>25</CNRatioDecompThreshold>
+        <TotalLeachRain>25</TotalLeachRain>
+        <MinRainToLeach>10</MinRainToLeach>
+        <CriticalMinimumOrganicC>0.004</CriticalMinimumOrganicC>
+        <DefaultCPRatio>0</DefaultCPRatio>
+        <DefaultStandingFraction>0</DefaultStandingFraction>
+        <StandingExtinctCoeff>0.5</StandingExtinctCoeff>
+        <FractionFaecesAdded>0.5</FractionFaecesAdded>
+      </SurfaceOrganicMatter>
+      <Soil>
+        <Name>Soil</Name>
+        <Water>
+          <Name>Water</Name>
+          <SoilCropOilPalm>
+            <Name>OilPalmSoil</Name>
+            <KL>
+              <double>0.06</double>
+              <double>0.04</double>
+              <double>0.03</double>
+              <double>0.02</double>
+              <double>0.02</double>
+              <double>0.02</double>
+              <double>0.01</double>
+              <double>0.01</double>
+              <double>0.01</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+            </KL>
+            <XF>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+            </XF>
+          </SoilCropOilPalm>
+          <Thickness>
+            <double>100</double>
+            <double>200</double>
+            <double>300</double>
+            <double>300</double>
+            <double>300</double>
+            <double>300</double>
+            <double>500</double>
+            <double>500</double>
+            <double>500</double>
+            <double>500</double>
+            <double>500</double>
+            <double>1000</double>
+          </Thickness>
+          <BD>
+            <double>1.22</double>
+            <double>1.22</double>
+            <double>1.43</double>
+            <double>1.14</double>
+            <double>1.15</double>
+            <double>1.15</double>
+            <double>1.43</double>
+            <double>1.43</double>
+            <double>1.43</double>
+            <double>1.43</double>
+            <double>1.43</double>
+            <double>1.43</double>
+          </BD>
+          <AirDry>
+            <double>0.127</double>
+            <double>0.127</double>
+            <double>0.1</double>
+            <double>0.137</double>
+            <double>0.135</double>
+            <double>0.135</double>
+            <double>0.1</double>
+            <double>0.1</double>
+            <double>0.1</double>
+            <double>0.1</double>
+            <double>0.1</double>
+            <double>0.1</double>
+          </AirDry>
+          <LL15>
+            <double>0.38</double>
+            <double>0.38</double>
+            <double>0.3</double>
+            <double>0.41</double>
+            <double>0.406</double>
+            <double>0.406</double>
+            <double>0.3</double>
+            <double>0.3</double>
+            <double>0.3</double>
+            <double>0.3</double>
+            <double>0.3</double>
+            <double>0.3</double>
+          </LL15>
+          <DUL>
+            <double>0.48</double>
+            <double>0.48</double>
+            <double>0.4</double>
+            <double>0.51</double>
+            <double>0.506</double>
+            <double>0.506</double>
+            <double>0.4</double>
+            <double>0.4</double>
+            <double>0.4</double>
+            <double>0.4</double>
+            <double>0.4</double>
+            <double>0.4</double>
+          </DUL>
+          <SAT>
+            <double>0.53</double>
+            <double>0.53</double>
+            <double>0.45</double>
+            <double>0.56</double>
+            <double>0.556</double>
+            <double>0.556</double>
+            <double>0.45</double>
+            <double>0.45</double>
+            <double>0.45</double>
+            <double>0.45</double>
+            <double>0.45</double>
+            <double>0.45</double>
+          </SAT>
+        </Water>
+        <SoilWater>
+          <Name>SoilWater</Name>
+          <residueinterception>0</residueinterception>
+          <SummerDate>1-Nov</SummerDate>
+          <SummerU>5</SummerU>
+          <SummerCona>5</SummerCona>
+          <WinterDate>1-Apr</WinterDate>
+          <WinterU>5</WinterU>
+          <WinterCona>5</WinterCona>
+          <DiffusConst>88</DiffusConst>
+          <DiffusSlope>35.4</DiffusSlope>
+          <Salb>0.18</Salb>
+          <CN2Bare>68</CN2Bare>
+          <CNRed>20</CNRed>
+          <CNCov>0.8</CNCov>
+          <slope>0</slope>
+          <discharge_width>0</discharge_width>
+          <catchment_area>0</catchment_area>
+          <max_pond>0</max_pond>
+          <Thickness>
+            <double>100</double>
+            <double>200</double>
+            <double>300</double>
+            <double>300</double>
+            <double>300</double>
+            <double>300</double>
+            <double>500</double>
+            <double>500</double>
+            <double>500</double>
+            <double>500</double>
+            <double>500</double>
+            <double>1000</double>
+          </Thickness>
+          <SWCON>
+            <double>0.7</double>
+            <double>0.7</double>
+            <double>0.7</double>
+            <double>0.7</double>
+            <double>0.7</double>
+            <double>0.7</double>
+            <double>0.5</double>
+            <double>0.5</double>
+            <double>0.5</double>
+            <double>0.5</double>
+            <double>0.5</double>
+            <double>0.5</double>
+          </SWCON>
+          <KLAT>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+          </KLAT>
+        </SoilWater>
+        <SoilNitrogen>
+          <Name>SoilNitrogen</Name>
+          <fom_type>
+            <string>default</string>
+            <string>manure</string>
+            <string>mucuna</string>
+            <string>lablab</string>
+            <string>shemp</string>
+            <string>stable</string>
+          </fom_type>
+          <fract_carb>
+            <double>0.2</double>
+            <double>0.3</double>
+            <double>0.54</double>
+            <double>0.57</double>
+            <double>0.45</double>
+            <double>0</double>
+          </fract_carb>
+          <fract_cell>
+            <double>0.7</double>
+            <double>0.3</double>
+            <double>0.37</double>
+            <double>0.37</double>
+            <double>0.47</double>
+            <double>0.1</double>
+          </fract_cell>
+          <fract_lign>
+            <double>0.1</double>
+            <double>0.4</double>
+            <double>0.09</double>
+            <double>0.06</double>
+            <double>0.08</double>
+            <double>0.9</double>
+          </fract_lign>
+          <wfpsN2N2O_x>
+            <double>22</double>
+            <double>88</double>
+          </wfpsN2N2O_x>
+          <wfpsN2N2O_y>
+            <double>0.1</double>
+            <double>1</double>
+          </wfpsN2N2O_y>
+          <oc>
+            <double>2.3455279591654286</double>
+            <double>0.71633992650457068</double>
+            <double>0.49726351786330858</double>
+            <double>0.407010260902978</double>
+            <double>0.40696750785589236</double>
+            <double>0.4069529007509266</double>
+            <double>0.40336344413089392</double>
+            <double>0.40337717949348184</double>
+            <double>0.40333286795312284</double>
+            <double>0.3984032643381461</double>
+            <double>0.39841061054844629</double>
+            <double>0.39837285737957484</double>
+          </oc>
+        </SoilNitrogen>
+        <SoilOrganicMatter>
+          <Name>SoilOrganicMatter</Name>
+          <RootCN>30</RootCN>
+          <RootWt>3000</RootWt>
+          <SoilCN>12</SoilCN>
+          <EnrACoeff>7.4</EnrACoeff>
+          <EnrBCoeff>0.2</EnrBCoeff>
+          <Thickness>
+            <double>100</double>
+            <double>100</double>
+            <double>100</double>
+            <double>300</double>
+            <double>300</double>
+            <double>600</double>
+            <double>500</double>
+            <double>500</double>
+            <double>500</double>
+            <double>500</double>
+            <double>500</double>
+            <double>1000</double>
+          </Thickness>
+          <Depth>
+            <string>0-10</string>
+            <string>10-20</string>
+            <string>20-30</string>
+            <string>30-60</string>
+            <string>60-90</string>
+            <string>90-150</string>
+            <string>150-200</string>
+            <string>200-250</string>
+            <string>250-300</string>
+            <string>300-350</string>
+            <string>350-400</string>
+            <string>400-500</string>
+          </Depth>
+          <OC>
+            <double>2.1</double>
+            <double>1.06</double>
+            <double>0.65</double>
+            <double>0.5</double>
+            <double>0.4</double>
+            <double>0.4</double>
+            <double>0.4</double>
+            <double>0.4</double>
+            <double>0.4</double>
+            <double>0.4</double>
+            <double>0.4</double>
+            <double>0.4</double>
+          </OC>
+          <FBiom>
+            <double>0.04</double>
+            <double>0.03</double>
+            <double>0.015</double>
+            <double>0.01</double>
+            <double>0.01</double>
+            <double>0.01</double>
+            <double>0.01</double>
+            <double>0.01</double>
+            <double>0.01</double>
+            <double>0.01</double>
+            <double>0.01</double>
+            <double>0.01</double>
+          </FBiom>
+          <FInert>
+            <double>0.24</double>
+            <double>0.47</double>
+            <double>0.77</double>
+            <double>0.95</double>
+            <double>0.99</double>
+            <double>0.99</double>
+            <double>0.99</double>
+            <double>0.99</double>
+            <double>0.99</double>
+            <double>0.99</double>
+            <double>0.99</double>
+            <double>0.99</double>
+          </FInert>
+          <OCUnits>Total</OCUnits>
+        </SoilOrganicMatter>
+        <Analysis>
+          <Name>Analysis</Name>
+          <Thickness>
+            <double>100</double>
+            <double>200</double>
+            <double>300</double>
+            <double>300</double>
+            <double>300</double>
+            <double>300</double>
+            <double>500</double>
+            <double>500</double>
+            <double>500</double>
+            <double>500</double>
+            <double>500</double>
+            <double>1000</double>
+          </Thickness>
+          <PH>
+            <double>6.3</double>
+            <double>6.4</double>
+            <double>6.7</double>
+            <double>6.8</double>
+            <double>6.8</double>
+            <double>6.8</double>
+            <double>6.8</double>
+            <double>6.8</double>
+            <double>6.8</double>
+            <double>6.8</double>
+            <double>6.8</double>
+            <double>6.8</double>
+          </PH>
+          <PHUnits>Water</PHUnits>
+          <BoronUnits>HotWater</BoronUnits>
+        </Analysis>
+        <InitialWater>
+          <Name>InitialWater</Name>
+          <PercentMethod>EvenlyDistributed</PercentMethod>
+          <FractionFull>1</FractionFull>
+          <DepthWetSoil>NaN</DepthWetSoil>
+        </InitialWater>
+        <Sample>
+          <Name>InitialNitrogen</Name>
+          <Thickness>
+            <double>100</double>
+            <double>200</double>
+            <double>300</double>
+            <double>300</double>
+            <double>300</double>
+            <double>300</double>
+            <double>500</double>
+            <double>500</double>
+            <double>500</double>
+            <double>500</double>
+            <double>500</double>
+            <double>1000</double>
+          </Thickness>
+          <NO3>
+            <double>5</double>
+            <double>5</double>
+            <double>1</double>
+            <double>1</double>
+            <double>1</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+          </NO3>
+          <NH4>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+          </NH4>
+          <NO3Units>ppm</NO3Units>
+          <NH4Units>ppm</NH4Units>
+          <SWUnits>Volumetric</SWUnits>
+          <OCUnits>Total</OCUnits>
+          <PHUnits>Water</PHUnits>
+        </Sample>
+        <RecordNumber>0</RecordNumber>
+        <SoilType>Higaturu Series </SoilType>
+        <LocalName />
+        <Site>Sangara Estate</Site>
+        <NearestTown>Popondetta</NearestTown>
+        <Region>Oro Province</Region>
+        <Country>PNG</Country>
+        <NaturalVegetation />
+        <Latitude>0</Latitude>
+        <Longitude>0</Longitude>
+      </Soil>
+      <Report>
+        <Name>AnnualOutput</Name>
+        <VariableNames>
+          <string>[Clock].Today</string>
+          <string>[Clock].Today.Year</string>
+          <string>OilPalm.Age</string>
+          <string>OilPalm.LAI</string>
+          <string>sum of [Weather].Rain from 1-Jan to 31-Dec as AnnualRain</string>
+          <string>sum of [Soil].SoilWater.Eo from 1-Jan to 31-Dec as AnnualPotentialEvaporation</string>
+          <string>sum of [Irrigation].IrrigationApplied from 1-Jan to 31-Dec as AnnualIrrigation</string>
+          <string>sum of [Fertiliser].NitrogenApplied from 1-Jan to 31-Dec as AnnualFertiliserNAdded</string>
+          <string>sum of [Soil].SoilWater.LeachNO3 from 1-Jan to 31-Dec as AnnualNLeaching</string>
+          <string>sum of sum([Soil].SoilNitrogen.Denitrification) from 1-Jan to 31-Dec as AnnualDenitrification</string>
+          <string>sum of sum([Soil].SoilNitrogen.n2o_atm) from 1-Jan to 31-Dec as AnnualN2O</string>
+          <string>sum of ([OilPalm].UnderstoryNFixation+[Fertiliser].NitrogenApplied) from 1-Jan to 31-Dec as AnnualTotalNInput</string>
+          <string>[Calculations].Script.AnnualFronds</string>
+          <string>[Calculations].Script.AnnualBunches</string>
+          <string>[Calculations].Script.AnnualYield</string>
+          <string>[Calculations].Script.AnnualBunchSize</string>
+          <string>sum of [OilPalm].UnderstoryDltDM*10 from 1-Jan to 31-Dec as AnnualUnderstoryNPP</string>
+          <string>sum of [OilPalm].UnderstoryNFixation from 1-Jan to 31-Dec as AnnualUnderstoryNFixation</string>
+          <string>sum of sum([OilPalm].UnderstoryNUptake) from 1-Jan to 31-Dec as AnnualUnderstoryNUptake</string>
+          <string>sum of sum([OilPalm].NUptake) from 1-Jan to 31-Dec as AnnualPalmNUptake</string>
+          <string>sum of [OilPalm].RootGrowth*10 from 1-Jan to 31-Dec as AnnualRootNPP</string>
+          <string>sum of [OilPalm].StemGrowth*10 from 1-Jan to 31-Dec as AnnualStemNPP</string>
+          <string>sum of [OilPalm].FrondGrowth*10 from 1-Jan to 31-Dec as AnnualFrondNPP</string>
+          <string>sum of [OilPalm].BunchGrowth*10 from 1-Jan to 31-Dec as AnnualBunchNPP</string>
+          <string>sum of (([OilPalm].RootGrowth+[OilPalm].StemGrowth+[OilPalm].FrondGrowth+[OilPalm].UnderstoryDltDM)*10) from 1-Jan to 31-Dec as AnnualTotalVegetativeNPP</string>
+          <string>sum of (([OilPalm].RootGrowth+[OilPalm].StemGrowth+[OilPalm].FrondGrowth)*10) from 1-Jan to 31-Dec as AnnualPalmVegetativeNPP</string>
+          <string>[Calculations].Script.AnnualNRemoved</string>
+          <string>avg of sum([Soil].SoilNitrogen.NO3) from 1-Jan to 31-Dec as AnnualAverageNO3</string>
+          <string>avg of [SurfaceOM].Wt from 1-Jan to 31-Dec as AnnualLitterMass</string>
+          <string>avg of [SurfaceOM].N from 1-Jan to 31-Dec as AnnualLitterN</string>
+        </VariableNames>
+        <EventNames>
+          <string>[Clock].EndOfYear</string>
+        </EventNames>
+      </Report>
+      <Report>
+        <Name>MonthlyOutput</Name>
+        <VariableNames>
+          <string>[Clock].Today.Year</string>
+          <string>[Clock].Today</string>
+          <string>[Clock].Today.Month</string>
+          <string>OilPalm.Age</string>
+          <string>[SurfaceOM].N</string>
+          <string>[SurfaceOM].Wt</string>
+          <string>OilPalm.LAI</string>
+          <string>OilPalm.StemMass</string>
+          <string>OilPalm.UnderstoryCoverGreen</string>
+          <string>[Calculations].Script.surfaceom_wt_oilpalmstem</string>
+          <string>[Calculations].Script.surfaceom_wt_oilpalmunderstory</string>
+          <string>sum([Soil].SoilNitrogen.TotalC)/1000 as SoilCtpha</string>
+          <string>sum([Soil].SoilNitrogen.TotalN) as SoilNkgpha</string>
+          <string>sum([Soil].NO3N) as TotalNO3</string>
+          <string>sum([Soil].SoilWater.SWmm) as TotalSW</string>
+          <string>sum([Soil].SoilWater.DULmm) as DUL</string>
+          <string>sum([Soil].SoilWater.SATmm) as SAT</string>
+        </VariableNames>
+        <EventNames>
+          <string>[Clock].StartOfMonth</string>
+        </EventNames>
+      </Report>
+      <OilPalm>
+        <Name>OilPalm</Name>
+        <ResourceName>OilPalm</ResourceName>
+        <interception>0</interception>
+        <UnderstoryCoverMax>0.4</UnderstoryCoverMax>
+        <UnderstoryLegumeFraction>1</UnderstoryLegumeFraction>
+        <InterceptionFraction>0</InterceptionFraction>
+        <MaximumRootDepth>5000</MaximumRootDepth>
+        <RootDepth>3030</RootDepth>
+        <DltDM>19.871097229371863</DltDM>
+        <ReproductiveGrowthFraction>0.54002291016689741</ReproductiveGrowthFraction>
+        <UnderstoryCoverGreen>0.04694817445569064</UnderstoryCoverGreen>
+        <UnderstoryPotNUptake>
+          <double>9.0366045056470252</double>
+          <double>16.949560255832868</double>
+          <double>10.550676027297538</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+        </UnderstoryPotNUptake>
+      </OilPalm>
+      <Irrigation>
+        <Name>Irrigation</Name>
+      </Irrigation>
+      <Manager>
+        <Name>Palm Management</Name>
+        <Script>
+          <sowing_date>1996-03-01</sowing_date>
+          <population>135</population>
+          <cultivar>Dami</cultivar>
+          <sowing_depth>200</sowing_depth>
+          <year1N>0.14</year1N>
+          <year2N>0.3</year2N>
+          <year3N>0.6</year3N>
+          <year4N>0.9</year4N>
+          <MatureN>1.05</MatureN>
+          <Irrigated>True</Irrigated>
+          <WaterRequirementYoung>20</WaterRequirementYoung>
+          <WaterRequirementMature>40</WaterRequirementMature>
+          <Plant_population>0</Plant_population>
+        </Script>
+        <Code><![CDATA[using System;
+using Models.Core;
+using Models.PMF;
+using Models.PMF.OilPalm;
+namespace Models
+{
+	[Serializable]
+	[System.Xml.Serialization.XmlInclude(typeof(Model))]
+	public class Script : Model
+	{
+		[Link] Clock Clock; 
+		[Link] OilPalm oilPalm;
+		[Link] Summary Summary;
+		[Link] Fertiliser Fertiliser;
+		[Link] Weather Weather;
+		[Link] Irrigation Irrigation;
+		
+		[Description("Sowing date")]
+		public DateTime sowing_date {get; set;}
+		
+		[Description("Plant population (/ha)")]
+		public double population {get; set;}
+
+		[Description("Cultivar")]
+		[Display(DisplayType = DisplayAttribute.DisplayTypeEnum.CultivarName)]
+        public string cultivar {get; set;}
+
+		[Description("Sowing depth (mm)")]
+		public double sowing_depth {get; set;}
+		
+		[Description("N applied in year 1 (kg/palm)")]
+		public double year1N {get;set;}
+		[Description("N applied in year 2 (kg/palm)")]
+		public double year2N {get;set;}
+		[Description("N applied in year 3 (kg/palm)")]
+		public double year3N {get;set;}
+		[Description("N applied in year 4 (kg/palm)")]
+		public double year4N {get;set;}
+		[Description("N applied to mature palms (kg/palm)")]
+		public double MatureN {get;set;}
+		[Description ("Are the palms irrigated? (True/False)")]
+		public bool Irrigated {get; set;}
+		[Description ("Weekly water requirement young palms (mm)")]
+		public double WaterRequirementYoung {get; set;}
+		[Description ("Weekly water requirement mature palms (mm)")]
+		public double WaterRequirementMature {get; set;}		
+		
+		private double WeeklyRain = 0;
+		private double DayCounter = 0;
+		
+		
+		public double Plant_population {get;set;}
+		
+		[EventSubscribe("Commencing")]
+		public void OnSimulationCommencing(object Sender, EventArgs e)
+		{
+		    Plant_population = 0;
+		}
+		
+		[EventSubscribe("DoManagement")]
+		private void OnDoManagement(object sender, EventArgs e)
+		{	
+			if (Clock.Today.Date == sowing_date)
+			{
+			    oilPalm.Sow(population: population / 10000, cultivar:cultivar, depth:sowing_depth, rowSpacing:150);
+			}
+		    if (Clock.Today.Day == 1 && (Clock.Today.Month == 3 || Clock.Today.Month == 6 || Clock.Today.Month == 9))
+		    {
+               double Nrate = 0;
+    		   if (oilPalm.Age <= 1)
+                  Nrate = year1N * population / 3;
+    		   else if (oilPalm.Age <= 2)
+                  Nrate = year2N * population / 3;
+    		   else if (oilPalm.Age <= 3)
+                  Nrate = year3N * population / 3;
+    		   else if (oilPalm.Age <= 4)
+                  Nrate = year4N * population / 3;
+               else
+                  Nrate = MatureN * population / 3;
+
+               Fertiliser.Apply(Nrate, Fertiliser.Types.NH4NO3N, 10);		    
+		    }
+		   DayCounter +=1;
+		   WeeklyRain += Weather.Rain;
+		   if (DayCounter == 7)
+		   {
+		      double Deficit = 0;
+		      if (oilPalm.Age<=3)
+		         Deficit = Math.Max(WaterRequirementYoung - WeeklyRain,0);
+		      else
+		         Deficit = Math.Max(WaterRequirementMature - WeeklyRain,0);
+		      if (Irrigated)
+		         Irrigation.Apply(amount:Deficit);
+		      DayCounter = 0;
+		      WeeklyRain = 0;
+		   }
+		}
+	}
+}
+]]></Code>
+      </Manager>
+      <Manager>
+        <Name>Calculations</Name>
+        <Script>
+          <Offset>6</Offset>
+          <AnnualFronds>0</AnnualFronds>
+          <AnnualBunches>0</AnnualBunches>
+          <AnnualYield>0</AnnualYield>
+          <AnnualBunchSize>0</AnnualBunchSize>
+          <surfaceom_wt_oilpalmstem>NaN</surfaceom_wt_oilpalmstem>
+          <surfaceom_wt_oilpalmunderstory>0</surfaceom_wt_oilpalmunderstory>
+          <OilPalmYield>0</OilPalmYield>
+          <AnnualNRemoved>0</AnnualNRemoved>
+        </Script>
+        <Code><![CDATA[using System;
+using Models.Core;
+using Models.PMF;
+using Models.PMF.OilPalm;
+using Models.Soils;
+using Models.SurfaceOM;
+
+namespace Models
+{ 
+	[Serializable]
+	[System.Xml.Serialization.XmlInclude(typeof(Model))]
+	public class Script : Model
+	{
+		[Link] Clock Clock;
+		[Link] OilPalm OilPalm;
+		[Link] Soil Soil;
+		[Link] SurfaceOrganicMatter SurfaceOM;
+		[Link] Summary Summary;
+		[Link] Fertiliser Fertiliser;
+		[Link] Weather Weather;
+		[Link] Irrigation Irrigation;
+		
+		public double Offset {get; set;}
+		public double AnnualFronds {get; set;}
+		public double AnnualBunches {get; set;}
+		public double AnnualYield {get; set;}
+		public double AnnualBunchSize {get; set;}
+		public double surfaceom_wt_oilpalmstem {get; set;}
+		public double surfaceom_wt_oilpalmunderstory {get; set;}
+	    public double OilPalmYield {get; set;}
+        public double AnnualNRemoved {get; set;}
+
+
+        
+        [EventSubscribe("Commencing")]
+        private void OnSimulationCommencing(object sender, EventArgs e)
+		{
+			Offset = 0;
+			OilPalmYield = 0;
+			AnnualFronds = 0;
+			AnnualBunches = 0;
+			AnnualBunchSize = 0;
+			AnnualYield = 0;
+			surfaceom_wt_oilpalmstem = 0;
+			surfaceom_wt_oilpalmunderstory = 0;	
+			AnnualNRemoved = 0;
+
+		}
+		
+
+       [EventSubscribe("StartOfYear")]
+       private void OnStartOfYear(object sender, EventArgs e)
+       {
+	   		Offset = OilPalm.CumulativeFrondNumber;
+			AnnualYield = 0;
+			AnnualBunches = 0;
+			AnnualBunchSize = 0;
+            AnnualNRemoved = 0;
+		}
+		
+       [EventSubscribe("DoManagementCalculations")]
+       private void OnDoManagement(object sender, EventArgs e)
+		{
+			surfaceom_wt_oilpalmstem = SurfaceOM.GetWeightFromPool("oilpalmstem");
+			AnnualFronds = OilPalm.CumulativeFrondNumber - Offset;							
+
+		}
+		
+		[EventSubscribe("Harvesting")]
+		private void OnHarvesting(object sender, EventArgs e)
+		{
+			AnnualYield += OilPalm.HarvestFFB;
+			AnnualBunches += OilPalm.HarvestBunches;
+			if (AnnualBunches > 0)
+				AnnualBunchSize = AnnualYield * 1000 / AnnualBunches / (OilPalm.Population * 10000);
+			AnnualNRemoved += OilPalm.HarvestNRemoved;
+		}
+	}
+}
+]]></Code>
+      </Manager>
+      <Area>1</Area>
+      <Slope>0</Slope>
+    </Zone>
+    <Graph>
+      <Name>AnnualFFB</Name>
+      <Title>Annual Yield of Fresh Fruit Bunches (t/ha)</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Year</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>FFB (t/ha)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Right</Type>
+        <Title>Annual Rainfall (mm)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>Annual Rainfall</Title>
+        <Type>Bar</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Right</YAxis>
+        <ColourArgb>-8355585</ColourArgb>
+        <Marker>None</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualRain</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>FFB</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-8388544</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Calculations.Script.AnnualYield</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>TopLeft</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Graph>
+      <Name>AnnualBunchProduction</Name>
+      <Title>Annual Bunch Production</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Year</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>Bunch Production (/palm)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Right</Type>
+        <Title>Annual Rainfall (mm)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>Annual Rainfall</Title>
+        <Type>Bar</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Right</YAxis>
+        <ColourArgb>-8355585</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualRain</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Annual Bunches per palm</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-8388544</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Calculations.Script.AnnualBunches</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>TopLeft</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Graph>
+      <Name>AnnualBunchSizes</Name>
+      <Title>Annual Bunch Size</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Year</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>Average Bunch Size (kg)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Right</Type>
+        <Title>Annual Rainfall (mm)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>Annual Rainfall</Title>
+        <Type>Bar</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Right</YAxis>
+        <ColourArgb>-8355585</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualRain</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Annual Bunch Size</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-8388544</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Calculations.Script.AnnualBunchSize</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>TopLeft</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Graph>
+      <Name>Vegetative NPP</Name>
+      <Title>Vegetative NPP (kg DM/ha)</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Year</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>Vegetative NPP (kg DM/ha)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>Annual Understory NPP</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-16744448</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualUnderstoryNPP</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Annual Palm Vegetative NPP</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-65536</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualPalmVegetativeNPP</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Annual Total Vegetative NPP</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-16776961</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualTotalVegetativeNPP</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>BottomRight</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Graph>
+      <Name>Palm NPP Breakdown</Name>
+      <Title>Palm NPP Breakdown(kg DM/ ha)</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Year</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>Palm NPP Breakdown (kg DM/ha)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>Annual Frond NPP</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-12550016</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualFrondNPP</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Annual Stem NPP</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-8355840</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualStemNPP</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Annual Root NPP</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-65536</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualRootNPP</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Annual Bunch NPP</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-8388544</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualBunchNPP</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>TopLeft</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Graph>
+      <Name>LAI</Name>
+      <Title>Leaf Area Index</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Year</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>Palm LAI (m2/m2)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>LAI</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-16744448</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>OilPalm.LAI</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>BottomRight</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Graph>
+      <Name>AnnualClimate</Name>
+      <Title>Annual Climate</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Year</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>Annual Rainfall and Potential Evaporation (mm) </Title>
+        <Inverted>false</Inverted>
+        <Minimum>0</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>Annual Rainfall</Title>
+        <Type>Bar</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-8355585</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualRain</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Annual Potential Evaporation</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-16776961</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualPotentialEvaporation</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>BottomRight</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Graph>
+      <Name>AnnualInputs</Name>
+      <Title>Annual Inputs of Irrigation and Fertiliser</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Year</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>Annual Fertiliser Input (kg N /ha)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>0</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Right</Type>
+        <Title>Annual Irrigation Input (mm)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>0</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>Annual Irrigation Addition</Title>
+        <Type>Bar</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Right</YAxis>
+        <ColourArgb>-8355585</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualIrrigation</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Annual N Addition</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-16744448</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualFertiliserNAdded</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>TopLeft</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Graph>
+      <Name>Annual N Inputs</Name>
+      <Title>Annual N Inputs (kg N/ha)</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Date</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>Annual N Inputs (kg N/ha)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>Annual N Fixation</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-16776961</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualUnderstoryNFixation</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Annual N Addition</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-16711936</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualFertiliserNAdded</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Annual Total N Input</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-65536</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualTotalNInput</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>BottomRight</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Graph>
+      <Name>Annual N Losses</Name>
+      <Title>Annual N Losses (kg N/ha)</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Year</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>Annual N Losses (kg N/ha)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>Annual N Leaching</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-16776961</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualNLeaching</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Annual N Denitrified</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-16711936</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualDenitrification</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Annual N Removed</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-65536</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Calculations.Script.AnnualNRemoved</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>TopLeft</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Graph>
+      <Name>Annual N Additions and Removal</Name>
+      <Title>Annual N Addition and Removal (kg N/ha)</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Year</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>Annual N Addition and Removal (kg N/ha)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>Annual N Addition</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-16776961</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualTotalNInput</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Annual N Removed</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-65536</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Calculations.Script.AnnualNRemoved</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>BottomRight</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Graph>
+      <Name>Soil Organic Matter</Name>
+      <Title>Soil Organic Matter</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Year</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>Total Soil Carbon (t C/ha)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Right</Type>
+        <Title>Total Soil Nitrogen (kg N/ha)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>Total Soil Carbon</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-32768</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>Clock.Today</FieldName>
+        </X>
+        <Y>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>SoilCtpha</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Total Soil Nitrogen</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Right</YAxis>
+        <ColourArgb>-16744320</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>Clock.Today</FieldName>
+        </X>
+        <Y>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>SoilNkgpha</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>TopRight</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Graph>
+      <Name>Litter Layer</Name>
+      <Title>Litter Layer</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Year</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>Litter Layer Mass (kg/ha)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Right</Type>
+        <Title>Litter Layer Nitrogen (kg N/ha)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>Litter Mass</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-32704</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>Clock.Today</FieldName>
+        </X>
+        <Y>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>SurfaceOM.Wt</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Litter N</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Right</YAxis>
+        <ColourArgb>-16744320</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>Clock.Today</FieldName>
+        </X>
+        <Y>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>SurfaceOM.N</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>TopRight</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Graph>
+      <Name>Profile Nitrate N</Name>
+      <Title>Profile Nitrate N</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Year</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>Profile Nitrate (kg N/ha)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Right</Type>
+        <Title>Litter Layer Nitrogen (kg N/ha)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>Profile Nitrate</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-16744320</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>Clock.Today</FieldName>
+        </X>
+        <Y>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>TotalNO3</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>TopRight</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Graph>
+      <Name>Profile Water</Name>
+      <Title>Profile Water</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Year</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>Profile Water (mm)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Right</Type>
+        <Title>Litter Layer Nitrogen (kg N/ha)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>Soil Water</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-16776961</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>Clock.Today</FieldName>
+        </X>
+        <Y>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>TotalSW</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>DUL</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-8355585</ColourArgb>
+        <Marker>None</Marker>
+        <Line>Dash</Line>
+        <X>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>Clock.Today</FieldName>
+        </X>
+        <Y>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>DUL</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>SAT</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-16777056</ColourArgb>
+        <Marker>None</Marker>
+        <Line>Dash</Line>
+        <X>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>Clock.Today</FieldName>
+        </X>
+        <Y>
+          <TableName>MonthlyOutput</TableName>
+          <FieldName>SAT</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>false</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>TopRight</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Graph>
+      <Name>N2O Emissions</Name>
+      <Title>N2O Emissions</Title>
+      <Axis>
+        <Type>Bottom</Type>
+        <Title>Year</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Left</Type>
+        <Title>N2O Emission (kg N/ha)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>0</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Axis>
+        <Type>Right</Type>
+        <Title>Annual Rainfall (mm)</Title>
+        <Inverted>false</Inverted>
+        <Minimum>NaN</Minimum>
+        <Maximum>NaN</Maximum>
+        <Interval>NaN</Interval>
+      </Axis>
+      <Series>
+        <Title>Annual Rainfall</Title>
+        <Type>Bar</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Right</YAxis>
+        <ColourArgb>-8355585</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualRain</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <Series>
+        <Title>Annual N2O Emission</Title>
+        <Type>Scatter</Type>
+        <XAxis>Bottom</XAxis>
+        <YAxis>Left</YAxis>
+        <ColourArgb>-16776961</ColourArgb>
+        <Marker>FilledCircle</Marker>
+        <Line>Solid</Line>
+        <X>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>Clock.Today.Year</FieldName>
+        </X>
+        <Y>
+          <TableName>AnnualOutput</TableName>
+          <FieldName>AnnualN2O</FieldName>
+        </Y>
+        <ShowRegressionLine>false</ShowRegressionLine>
+        <ShowInLegend>true</ShowInLegend>
+        <Cumulative>false</Cumulative>
+      </Series>
+      <LegendPosition>TopLeft</LegendPosition>
+      <ShowRegressionLine>false</ShowRegressionLine>
+      <DisabledSeries />
+    </Graph>
+    <Area>0</Area>
+    <Slope>0</Slope>
+  </Simulation>
+  <DataStore>
+    <Name>DataStore</Name>
+    <AutoExport>false</AutoExport>
+  </DataStore>
+  <ExplorerWidth>296</ExplorerWidth>
+</Simulations>

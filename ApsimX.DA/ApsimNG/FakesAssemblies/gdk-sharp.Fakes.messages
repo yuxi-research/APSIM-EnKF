@@ -1,0 +1,383 @@
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.AreaUpdatedHandler: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.AxisUse: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.AxisUseAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.BRESINFO: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ByteOrder: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ByteOrderAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.CapStyle: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.CapStyleAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ClosedHandler: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Color: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ColorAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ColormapAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Colorspace: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ColorspaceAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.CrossingMode: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.CrossingModeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.CursorAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.CursorType: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.CursorTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.DestroyNotify: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.DeviceAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.DeviceAxis: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.DeviceKey: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.DisplayAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.DisplayManagerAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.DisplayOpenedHandler: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.DisplayPointerHooks: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.DragAction: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.DragActionAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.DragContextAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.DragProtocol: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.DragProtocolAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.DrawableAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.EdgeTable: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.EventFunc: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.EventMask: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.EventMaskAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.EventType: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.EventTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ExtensionMode: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ExtensionModeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Fill: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.FillAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.FillRule: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.FillRuleAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.FilterFunc: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.FilterReturn: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.FilterReturnAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Font: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.FontAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.FontType: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.FontTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Function: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.FunctionAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.GCAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.GCValues: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.GCValuesMask: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.DestroyNotifyNative: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.DestroyNotifyInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.DestroyNotifyWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.EventFuncNative: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.EventFuncInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.EventFuncWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.FilterFuncNative: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.FilterFuncInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.FilterFuncWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.InputFunctionNative: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.InputFunctionInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.InputFunctionWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.InvalidateMaybeRecurseChildFuncNative: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.InvalidateMaybeRecurseChildFuncInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.InvalidateMaybeRecurseChildFuncWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.PixbufDestroyNotifyNative: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.PixbufDestroyNotifyInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.PixbufDestroyNotifyWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.PixbufSaveFuncNative: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.PixbufSaveFuncInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.PixbufSaveFuncWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.SpanFuncNative: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.SpanFuncInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GdkSharp.SpanFuncWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Geometry: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GLibSharp.GSourceFuncNative: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GLibSharp.GSourceFuncInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GLibSharp.GSourceFuncWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GLibSharp.SpawnChildSetupFuncNative: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GLibSharp.SpawnChildSetupFuncInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for GLibSharp.SpawnChildSetupFuncWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.GrabStatus: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.GrabStatusAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Gravity: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.GravityAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ImageAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ImageType: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ImageTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.InputCondition: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.InputConditionAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.InputFunction: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.InputMode: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.InputModeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.InputSource: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.InputSourceAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.InterpType: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.InterpTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.InvalidateMaybeRecurseChildFunc: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.JoinStyle: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.JoinStyleAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.KeymapAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.KeymapKey: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.LineStyle: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.LineStyleAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ModifierType: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ModifierTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.NotifyType: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.NotifyTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.OverlapType: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.OverlapTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.OwnerChange: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.OwnerChangeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PangoRendererAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufAlphaMode: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufAlphaModeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufAniAnimAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufAniAnimIterAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufAnimationAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufAnimationIterAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufDestroyNotify: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufError: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufErrorAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufFrame: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufFrameAction: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufGifAnimAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufGifAnimIterAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufLoaderAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufRotation: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufRotationAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufSaveFunc: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixbufSimpleAnimAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Pixdata: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixdataDumpType: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixdataType: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PixmapAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Point: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PointerHooks: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PropertyState: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PropertyStateAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PropMode: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.PropModeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Rectangle: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.RectangleAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.RegionBox: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.RgbDither: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.RgbDitherAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ScreenAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ScrollDirection: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.ScrollDirectionAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Segment: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.SettingAction: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.SettingActionAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.SizePreparedHandler: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Span: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.SpanFunc: type is sealed.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Status: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.StatusAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.SubwindowMode: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.SubwindowModeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.TimeCoord: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Trapezoid: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.VisibilityState: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.VisibilityStateAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.VisualAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.VisualType: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.VisualTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowAttr: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowAttributesType: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowAttributesTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowClass: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowClassAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowEdge: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowEdgeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowHints: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowHintsAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowState: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowStateAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowType: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowTypeHint: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WindowTypeHintAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WMDecoration: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.WMFunction: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Key: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate stub for Gdk.Size: type is a value type.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.AreaUpdatedHandler: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.AxisUse: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.AxisUseAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ByteOrder: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ByteOrderAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.CapStyle: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.CapStyleAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ClosedHandler: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ColorAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ColormapAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.Colorspace: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ColorspaceAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.CrossingMode: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.CrossingModeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.Cursor+FinalizerInfo: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.CursorAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.CursorType: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.CursorTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.DestroyNotify: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.DeviceAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.Display+ClosedVMDelegate: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.DisplayAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.DisplayManager+DisplayOpenedVMDelegate: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.DisplayManagerAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.DisplayOpenedHandler: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.DragAction: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.DragActionAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.DragContextAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.DragProtocol: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.DragProtocolAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.DrawableAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.EventFunc: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.EventMask: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.EventMaskAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.EventType: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.EventTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ExtensionMode: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ExtensionModeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.Fill: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.FillAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.FillRule: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.FillRuleAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.FilterFunc: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.FilterReturn: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.FilterReturnAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.Font: type is obsolete.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.FontAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.FontType: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.FontTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.Function: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.FunctionAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.GCAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.GCValuesMask: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.DestroyNotifyNative: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.DestroyNotifyInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.DestroyNotifyWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.EventFuncNative: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.EventFuncInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.EventFuncWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.FilterFuncNative: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.FilterFuncInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.FilterFuncWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.InputFunctionNative: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.InputFunctionInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.InputFunctionWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.InvalidateMaybeRecurseChildFuncNative: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.InvalidateMaybeRecurseChildFuncInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.InvalidateMaybeRecurseChildFuncWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.PixbufDestroyNotifyNative: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.PixbufDestroyNotifyInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.PixbufDestroyNotifyWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.PixbufSaveFuncNative: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.PixbufSaveFuncInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.PixbufSaveFuncWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.SpanFuncNative: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.SpanFuncInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GdkSharp.SpanFuncWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GLibSharp.GSourceFuncNative: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GLibSharp.GSourceFuncInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GLibSharp.GSourceFuncWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GLibSharp.SpawnChildSetupFuncNative: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GLibSharp.SpawnChildSetupFuncInvoker: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for GLibSharp.SpawnChildSetupFuncWrapper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.GrabStatus: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.GrabStatusAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.Gravity: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.GravityAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ImageAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ImageType: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ImageTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.InputCondition: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.InputConditionAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.InputFunction: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.InputMode: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.InputModeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.InputSource: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.InputSourceAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.InterpType: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.InterpTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.InvalidateMaybeRecurseChildFunc: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.JoinStyle: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.JoinStyleAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.Keymap+DirectionChangedVMDelegate: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.Keymap+KeysChangedVMDelegate: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.KeymapAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.LineStyle: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.LineStyleAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ModifierType: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ModifierTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.NotifyType: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.NotifyTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.OverlapType: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.OverlapTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.OwnerChange: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.OwnerChangeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PangoRendererAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.Pixbuf+DestroyHelper: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufAlphaMode: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufAlphaModeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufAniAnimAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufAniAnimIterAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufAnimationAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufAnimationIterAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufDestroyNotify: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufError: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufErrorAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufFrameAction: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufGifAnimAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufGifAnimIterAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufLoader+AreaPreparedVMDelegate: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufLoader+AreaUpdatedVMDelegate: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufLoader+ClosedVMDelegate: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufLoader+SizePreparedVMDelegate: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufLoaderAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufRotation: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufRotationAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufSaveFunc: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixbufSimpleAnimAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixdataDumpType: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixdataType: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PixmapAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PropertyState: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PropertyStateAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PropMode: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.PropModeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.RectangleAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.Region+FinalizerInfo: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.RgbCmap+FinalizerInfo: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.RgbDither: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.RgbDitherAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.Screen+CompositedChangedVMDelegate: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.Screen+SizeChangedVMDelegate: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ScreenAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ScrollDirection: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.ScrollDirectionAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.SettingAction: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.SettingActionAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.SizePreparedHandler: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.SpanFunc: type is a delegate.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.Status: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.StatusAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.SubwindowMode: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.SubwindowModeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.VisibilityState: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.VisibilityStateAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.VisualAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.VisualType: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.VisualTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WindowAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WindowAttributesType: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WindowAttributesTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WindowClass: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WindowClassAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WindowEdge: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WindowEdgeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WindowHints: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WindowHintsAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WindowState: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WindowStateAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WindowType: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WindowTypeAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WindowTypeHint: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WindowTypeHintAttribute: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WMDecoration: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.WMFunction: type is an enum.
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.EventGrabBroken+NativeEventGrabBroken: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.EventOwnerChange+NativeStruct: type is not visible to exported or assembly(gdk-sharp.Fakes).
+D:\Works\GitHub\DABranch1\ApsimX.DA\ApsimNG\Fakes\gdk-sharp.fakes : warning : Cannot generate shim for Gdk.Key: type is an enum.

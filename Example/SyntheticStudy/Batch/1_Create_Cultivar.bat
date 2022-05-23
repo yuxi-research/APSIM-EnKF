@@ -1,0 +1,1 @@
+IF NOT EXIST Cultivar\*.xml call ..\..\CreateFiles\Cultivar\bin\Debug\Cultivar.exe .

@@ -1,0 +1,10 @@
+Utility/obj/
+packages/
+Bin/
+*.suo
+APSIM.Shared.Soils/obj/
+APSIM.Shared.Utility/obj/
+obj/Debug/APSIM.Shared.csproj.FileListAbsolute.txt
+*.cache
+obj/
+*.user
